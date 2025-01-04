@@ -2,16 +2,14 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
   integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-  <!-- Font Awesome CSS (updated to 5.15.4 for better icon support) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/linearicons/1.0.0/font.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -27,60 +25,53 @@
     justify-content: flex-start;
   }
 
-  /* Ensure no space between dropdown and search field */
   .dropdown {
     margin-right: 0;
-    /* Remove margin-right */
+  
   }
 
-  /* Search container */
+ 
   .search-container {
     position: relative;
     width: 500px;
-    /* Fixed width for the search input */
     margin-left: 0;
-    /* No left margin */
+    
   }
 
-  /* Input styling */
+  
   .search-container input {
     width: 100%;
     padding: 8px 30px 8px 10px;
-    /* Padding for the icon */
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
   }
 
-  /* Icon styling inside the search input */
+
   .search-container i {
     position: absolute;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
-    /* Vertically center the icon */
     color: #aaa;
     font-size: 18px;
-    /* Icon size */
+ 
   }
 
-  /* For smaller screens: adjust the layout */
+
   @media (max-width: 767px) {
     .d-flex {
       flex-direction: column;
-      /* Stack elements vertically */
       width: 100%;
     }
 
     .search-container {
       margin-top: 10px;
       width: 100%;
-      /* Full width for search field */
     }
 
     .dropdown {
       margin-right: 0;
-      /* Remove margin when stacked */
     }
   }
 
@@ -101,17 +92,14 @@
 
   h3 {
     margin-bottom: 1rem;
-    /* Adjust spacing between title and list */
   }
 
   .list-unstyled li {
     margin-bottom: 5px;
-    /* Reduce space between each list item */
   }
 
   .container-fluid {
     padding: 2rem 3rem;
-    /* Adjust padding on the container to reduce overall space */
   }
 
 
@@ -149,15 +137,12 @@
     }
   }
 
-  /* Increase the size of the icons */
+
   i.fa-regular,
   i.fa-solid {
     font-size: 30px;
-    /* You can adjust this value to make the icon larger */
     width: 40px;
-    /* Optional, you can adjust this to increase the width */
     height: 40px;
-    /* Optional, can help if you want consistent dimensions */
   }
 
 
@@ -196,15 +181,18 @@
  <section>
     <div class="container">
         <div class="row d-flex align-items-center justify-content-between">
-            <!-- Logo Section -->
+       
             <div class="col-lg-2 col-md-3 col-sm-4 mb-3 mb-md-0">
                 <img src="../assets/image/logo.png" alt="LOGO" class="img-fluid" style="max-width: 120px;">
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-6 mb-3 mb-md-0">
+
+            
+
+            <div class="col-lg-6 mb-3 mb-md-0">
                 <div class="d-flex align-items-center justify-content-between">
 
-                    <!-- Dropdown -->
+                 
                     <div class="dropdown">
                         <a class="btn btn-outline-dark form-control d-flex align-items-center" href="#" role="button"
                            data-toggle="dropdown" aria-expanded="false" style="width: 200px; height: 38px;">
@@ -225,7 +213,7 @@
                         </div>
                     </div>
 
-                    <!-- Search Input -->
+                
                     <div class="search-container d-flex">
                         <input type="search" id="gsearch" name="gsearch" placeholder="Search..." class="form-control"
                                style="height: 38px; width: 500px;">
@@ -235,7 +223,7 @@
                 </div>
             </div>
 
-            <!-- Icons Section -->
+      
             <div class="col-lg-2 col-md-3 col-sm-2 d-flex justify-content-end align-items-center">
                 <div class="mr-3">
                     <i class="fa-regular fa-user"></i>
@@ -250,15 +238,25 @@
     </div>
 </section>
 
-<!-- CSS for hiding elements on small screens -->
 <style>
-  /* For screens smaller than 1170px */
+
   @media (max-width: 1170px) {
-    /* Hide the dropdown, search, and icons */
-    .dropdown, .search-container, .col-lg-2.col-md-3.col-sm-2.d-flex {
+  
+
+    .dropdown, .search-container {
       display: none !important;
     }
   }
+
+
+
+  .col-lg-2.col-md-3.col-sm-2.d-flex{
+   
+  }
+
+
+
+
 </style>
 
 
@@ -396,23 +394,35 @@
 
 
 
+
+
+
+    
+
+
+    
+
+
+    
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
-      <!-- &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -->
+     
       <!-- <a class="navbar-brand" href="#" style="color: whitesmoke;">Brand</a> -->
       
       <!-- Button for collapsing the navbar (hamburger menu) -->
       
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+      <!-- <button class="navbar-toggler navbar-toggler-left navbarrr" type="button" data-toggle="collapse" data-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> -->
+
+
+              <button class="navbar-toggler ml-auto navbarrr" type="button" data-toggle="collapse" data-target="#navbarNav" 
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
       </button>
     
       <!-- Navbar items -->
-      <div class="collapse navbar-collapse text-center" id="navbarNav">
-        <ul class="navbar-nav">
+      <!-- <div class="collapse navbar-collapse text-center" style="margin-left: 370px;" id="navbarNav"> -->
+      <div class="collapse navbar-collapse text-center nav-resp" id="navbarNav">
+        <ul class="navbar-nav home-link">
           <li class="nav-item active">
             <a class="nav-link" href="#" style="color: whitesmoke; font-size: 15px;"><strong>HOME</strong></a>
           </li>
@@ -493,10 +503,130 @@
 
 
     </nav>
-    
-   
-    
 
+
+<style>
+    .home-link {
+        margin-left: 400px; /* For larger screens */
+    }
+
+    @media (max-width: 768px) {
+        .home-link {
+            margin-left: 10px; /* For mobile screens */
+        }
+    }
+/* Align the navbar-toggler to the left */
+.navbar-toggler {
+  margin-right: 0 !important; /* Remove any left margin */
+}
+
+/* You can also set margin with Bootstrap's ml-*-classes if you need */
+/* .navbar-toggler-left {
+  margin-left: 230px;  
+} */
+
+/* .nav-resp{
+
+} */
+</style>
+
+
+<!-- <section>
+ <div class="conatiner">
+
+   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" style="margin-left: -150px;" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#" style="color: whitesmoke; font-size: 15px;"><strong>HOME</strong></a>
+            </li>
+            &nbsp;&nbsp;
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+                    <strong>CATEGORIES</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">All</a>
+                    <a class="dropdown-item" href="#">Fleece</a>
+                    <a class="dropdown-item" href="#">Tees</a>
+                </div>
+            </li>
+            &nbsp;&nbsp;
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: whitesmoke; font-size: 15px;"><strong>ADULTS</strong></a>
+            </li>
+            &nbsp;&nbsp;
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: whitesmoke; font-size: 15px;"><strong>WOMEN</strong></a>
+            </li>
+            &nbsp;&nbsp;
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: whitesmoke; font-size: 15px;"><strong>YOUTH</strong></a>
+            </li>
+            &nbsp;&nbsp;
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+                    <strong>COLLECTIONS</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">All</a>
+                    <a class="dropdown-item" href="#">Fleece</a>
+                    <a class="dropdown-item" href="#">Tees</a>
+                </div>
+            </li>
+            &nbsp;&nbsp;
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+                    <strong>FLEECE STYLES</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">All</a>
+                    <a class="dropdown-item" href="#">Fleece</a>
+                    <a class="dropdown-item" href="#">Tees</a>
+                </div>
+            </li>
+            &nbsp;&nbsp;
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+                    <strong>T & T Styles</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">All</a>
+                    <a class="dropdown-item" href="#">Fleece</a>
+                    <a class="dropdown-item" href="#">Tees</a>
+                </div>
+            </li>
+            &nbsp;&nbsp;
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+                    <strong>FINISHES</strong>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">All</a>
+                    <a class="dropdown-item" href="#">Fleece</a>
+                    <a class="dropdown-item" href="#">Tees</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+</div>  
+</div>  
+</section> -->
 
     
     <div class="container">

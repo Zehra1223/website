@@ -1,104 +1,169 @@
-<div class="container-fluid bg-dark text-white p-5">
-    <div class="row g-0"> <!-- Added g-0 to remove gutters between columns -->
-        <div class="col-md-3">
-            <p>At Mill Direct Blanks, we draw on 40 years of experience in factories and supply chains to provide high-quality products at low prices. By shipping directly to the nearest port and producing in low-wage countries like Pakistan, we cut costs and pass the savings on to you. Our blank apparel is customizable, offering flexibility in styles, colors, and fabrics to help you stand out. Committed to eco-friendly and ethical sourcing, we ensure our products meet your standards while supporting sustainable practices. Mill Direct Blanks: Quality, affordability, and customization you can trust.</p>
-        </div>
-  
-        <div class="col-md-3">
-            <h3 class="mb-3">Information</h3>
-            <ul class="list-unstyled">
-                <li><a href="#" class="text-white">About Us</a></li>
-                <li><a href="#" class="text-white">Shipping and Delivery</a></li>
-                <li><a href="#" class="text-white">Data Sheet Legend</a></li>
-                <li><a href="#" class="text-white">MOV, Pricing Quotes</a></li>
-            </ul>
-        </div>
-  
-        <div class="col-md-3">
-            <h3 class="mb-3">Services</h3>
-            <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Custom Manufacturing</a></li>
-                <li><a href="#" class="text-white">Pros & Cons</a></li>
-                <li><a href="#" class="text-white">Product Sourcing</a></li>
-                <li><a href="#" class="text-white">Quality Assurance</a></li>
-            </ul>
-        </div>
-  
-        <div class="col-md-3">
-            <h3 class="mb-3">Resources</h3>
-            <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Custom Manufacturing</a></li>
-                <li><a href="#" class="text-white">Pros & Cons</a></li>
-                <li><a href="#" class="text-white">Product Sourcing</a></li>
-                <li><a href="#" class="text-white">Quality Assurance</a></li>
-            </ul>
-        </div>
-    </div>
+<section>
+  <div class="container">
+      <div class="row d-flex align-items-center justify-content-between">
+          <!-- Logo on left side -->
+          <div class="col-lg-2 col-md-3 col-sm-4 mb-3 mb-md-0">
+              <img src="../assets/image/logo.png" alt="LOGO" class="img-fluid" style="max-width: 120px;">
+          </div>
+
+          <!-- Categories, Search, and Icons section on larger screens -->
+          <div class="col-lg-6 col-md-6 col-sm-6 mb-3 mb-md-0">
+              <div class="d-flex align-items-center justify-content-between">
+                  <div class="dropdown">
+                      <a class="btn btn-outline-dark form-control d-flex align-items-center" href="#" role="button"
+                         data-toggle="dropdown" aria-expanded="false" style="width: 200px; height: 38px;">
+                          Category
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <img src="../assets/image/drop.png" alt="Dropdown" width="10px" class="ml-2">
+                      </a>
+                      <div class="dropdown-menu" style="max-height: 200px; overflow-y: auto;">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <!-- More items -->
+                      </div>
+                  </div>
+
+                  <div class="search-container d-flex">
+                      <input type="search" id="gsearch" name="gsearch" placeholder="Search..." class="form-control"
+                             style="height: 38px; width: 500px;">
+                      <i class="fas fa-search ml-2"
+                         style="position: absolute; top: 50%; transform: translateY(-50%); right: 25px;"></i>
+                  </div>
+              </div>
+          </div>
+
+          <!-- User & Cart icons on larger screens -->
+          <div class="col-lg-2 col-md-3 col-sm-2 d-flex justify-content-end align-items-center">
+              <div class="mr-3">
+                  <i class="fa-regular fa-user"></i>
+              </div>
+
+              <div>
+                  <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<style>
+  /* For screens smaller than 1170px */
+  @media (max-width: 1170px) {
+      .dropdown, .search-container, .col-lg-2.col-md-3.col-sm-2.d-flex {
+          display: none !important;
+      }
+  }
+
+  /* Custom styles for navbar */
+  .navbar {
+      padding: 0;
+  }
+  .navbar-toggler {
+      border-color: transparent;
+  }
+
+  /* Navbar on mobile: Logo stays left, menu icon stays right */
+  @media (max-width: 992px) {
+      .navbar-nav {
+          width: 100%;
+          justify-content: flex-end; /* Align navbar items to the right */
+      }
+      
+      .navbar-toggler {
+          position: absolute;
+          right: 10px;
+      }
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+  <!-- Logo section (on large screens) -->
+  <div class="d-none d-lg-inline">
+      <img src="../assets/image/logo.png" alt="Logo" class="img-fluid" style="max-width: 120px;">
   </div>
 
-  
+  <!-- Button for collapsing the navbar (hamburger menu) -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
 
-
-
-  <div class="container-fluid text-white p-5" style="background-color: rgb(49, 49, 49);">
-    <div class="row justify-content-center">
-
-      <!-- <div class="col-md-3 d-flex justify-content-center align-items-center">
-      <img src="../assets/image/logo.png" alt="LOGO" width="50px">
-      <p>At Mill Direct Blanks, we draw on 40 years of experience in factories and supply chains to provide high-quality products at low prices. By shipping directly to the nearest port and producing in low-wage countries like Pakistan, we cut costs and pass the savings on to you. Our blank apparel is customizable, offering flexibility in styles, colors, and fabrics to help you stand out. Committed to eco-friendly and ethical sourcing, we ensure our products meet your standards while supporting sustainable practices. Mill Direct Blanks: Quality, affordability, and customization you can trust.</p>
-    </div> -->
-      <div class="col-md-3">
-        <!-- Image on top of the paragraph with larger margin to the left -->
-        <div class="text-center mb-3 mr-5">
-          <img src="../assets/image/logofooter.png" alt="LOGO" width="100px" style="margin-right: 300px;">
-        </div>
-        <p>At Mill Direct Blanks, we draw on 40 years of experience in factories and supply chains to provide
-          high-quality products at low prices. By shipping directly to the nearest port and producing in low-wage
-          countries like Pakistan, we cut costs and pass the savings on to you. Our blank apparel is customizable,
-          offering flexibility in styles, colors, and fabrics to help you stand out. Committed to eco-friendly and
-          ethical sourcing, we ensure our products meet your standards while supporting sustainable practices. Mill
-          Direct Blanks: Quality, affordability, and customization you can trust.</p>
-      </div>
-
-
-      <!-- Column 2: Information -->
-      <div class="col-md-3 d-flex justify-content-center align-items-center">
-        <div>
-          <h3 class="mb-3">Information</h3>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">About Us</a></li>
-            <li><a href="#" class="text-white">Shipping and Delivery</a></li>
-            <li><a href="#" class="text-white">Data Sheet Legend</a></li>
-            <li><a href="#" class="text-white">MOV, Pricing Quotes</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Column 3: Services -->
-      <div class="col-md-3 d-flex justify-content-center align-items-center">
-        <div>
-          <h3 class="mb-3">Services</h3>
-          <ul class="list-unstyled"
-            <li><a href="#" class="text-white">Custom Manufacturing</a></li>
-            <li><a href="#" class="text-white">Pros & Cons</a></li>
-            <li><a href="#" class="text-white">Product Sourcing</a></li>
-            <li><a href="#" class="text-white">Quality Assurance</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Column 4: Resources -->
-      <div class="col-md-3 d-flex justify-content-center align-items-center">
-        <div>
-          <h3 class="mb-3">Resources</h3>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Custom Manufacturing</a></li>
-            <li><a href="#" class="text-white">Pros & Cons</a></li>
-            <li><a href="#" class="text-white">Product Sourcing</a></li>
-            <li><a href="#" class="text-white">Quality Assurance</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <!-- Navbar items -->
+  <div class="collapse navbar-collapse text-center" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item active">
+              <a class="nav-link" href="#" style="color: whitesmoke; font-size: 15px;"><strong>HOME</strong></a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+                  <strong>CATEGORIES</strong>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">All</a>
+                  <a class="dropdown-item" href="#">Fleece</a>
+                  <a class="dropdown-item" href="#">Tees</a>
+              </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#" style="color: whitesmoke; font-size: 15px;"><strong>ADULTS</strong></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#" style="color: whitesmoke; font-size: 15px;"><strong>WOMEN</strong></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#" style="color: whitesmoke; font-size: 15px;"><strong>YOUTH</strong></a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+                  <strong>COLLECTIONS</strong>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">All</a>
+                  <a class="dropdown-item" href="#">Fleece</a>
+                  <a class="dropdown-item" href="#">Tees</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+                  <strong>FLEECE STYLES</strong>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">All</a>
+                  <a class="dropdown-item" href="#">Fleece</a>
+                  <a class="dropdown-item" href="#">Tees</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+                  <strong>T & T Styles</strong>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">All</a>
+                  <a class="dropdown-item" href="#">Fleece</a>
+                  <a class="dropdown-item" href="#">Tees</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+                  <strong>FINISHES</strong>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">All</a>
+                  <a class="dropdown-item" href="#">Fleece</a>
+                  <a class="dropdown-item" href="#">Tees</a>
+              </div>
+          </li>
+      </ul>
   </div>
+</nav>
 
+<!-- Include Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
