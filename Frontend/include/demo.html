@@ -162,6 +162,28 @@
       </ul>
   </div>
 </nav>
+<div class="square-container">
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+  <div class="square"></div>
+</div>
+
+<style>
+  .square-container {
+      display: flex;               /* Use flexbox to align the boxes in a row */
+      flex-wrap: wrap;             /* Allow wrapping to next line if space is insufficient */
+      gap: 10px;                   /* Space between the boxes */
+  }
+
+  .square {
+      width: 50px;                 /* Set the width of each square */
+      height: 50px;                /* Set the height of each square */
+      background-color: #333333;   /* Set background color for the square */
+      border-radius: 5px;          /* Optional: Adds rounded corners */
+  }
+</style>
 
 <!-- Include Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
