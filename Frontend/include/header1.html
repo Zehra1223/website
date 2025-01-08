@@ -16,7 +16,7 @@
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <title>Almeera Ecommerce Website</title>
+  <title>Almeera Ecommerce Web site</title>
 </head>
 <style>
   .d-flex {
@@ -40,7 +40,7 @@
 
 
   .search-container input {
-    /* width: 100%; */
+    width: 100%;
     padding: 8px 30px 8px 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -59,7 +59,7 @@
   }
 
 
-  /* @media (max-width: 767px) {
+  @media (max-width: 767px) {
     .d-flex {
       flex-direction: column;
       width: 100%;
@@ -73,17 +73,17 @@
     .dropdown {
       margin-right: 0;
     }
-  } */
+  }
 
   .no-space {
     margin-bottom: 0;
   }
 
-  /* @media (max-width: 767px) {
+  @media (max-width: 767px) {
     .search-container input {
       width: 100%;
     }
-  } */
+  }
 
   .col-md-3 {
     padding-bottom: 10px;
@@ -107,11 +107,11 @@
     /* For larger screens */
   }
 
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     .home-link {
       margin-left: 10px;
     }
-  } */
+  }
 
   /* Align the navbar-toggler to the left */
   .navbar-toggler {
@@ -119,7 +119,7 @@
   }
 
 
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     .search-container input {
       width: 100%;
     }
@@ -146,7 +146,7 @@
     .mr-3 {
       margin-right: 10px;
     }
-  } */
+  }
 
 
   i.fa-regular,
@@ -157,42 +157,14 @@
   }
 
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1170px) {
+
+
     .dropdown,
     .search-container {
       display: none !important;
-    } 
+    }
   }
-
-  @media (max-width: 991px) {
-  .col-lg-2 .logo_pic {
-    max-width: 120px;
-    /* Aap aur bhi CSS properties yahan add kar sakte hain */
-  }
-}
-
-.search-container1 {
-  position: absolute;
-  top: 50%;
-  right: 150px;
-  transform: translateY(-50%);
-  transition: all 0.3s ease-in-out;
-}
-
-.search-input {
-  width: 0;
-  padding: 5px;
-  font-size: 16px;
-  opacity: 0;
-  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.search-input.show {
-  width: 150px;
-  opacity: 1;
-}
-
-
 </style>
 
 <body>
@@ -221,62 +193,54 @@
 
   <section>
     <div class="container">
-      <div class="row d-flex align-items-center justify-content-between flex-wrap flex-md-nowrap">
-  
-        <div class="col-lg-2 col-md-4 col-sm-4 col-4 mb-3 mb-md-0 text-center">
-          <img src="../assets/image/logo.png" alt="LOGO" class="img-fluid logo_pic">
+      <div class="row d-flex align-items-center justify-content-between">
+
+        <div class="col-lg-2 col-md-3 col-sm-4 mb-3 mb-md-0">
+          <img src="../assets/image/logo.png" alt="LOGO" class="img-fluid" style="max-width: 120px;">
         </div>
-  
-        <div class="col-lg-6 col-md-4 col-sm-4 col-2 mb-3 mb-md-0">
+
+        <div class="col-lg-6 mb-3 mb-md-0">
           <div class="row">
-            <div class="col-lg-4 col-md-5 col-6 p-0">
+            <div class="col-lg-4">
+
               <div class="dropdown">
                 <a class="btn btn-outline-dark form-control d-flex align-items-center" href="#" role="button"
                   data-toggle="dropdown" aria-expanded="false">
                   Category
-                  <i class="fa-solid fa-caret-down d-flex justify-content-end ml-lg-1 ml-xl-5" style="font-size: 15px;"></i>
+                  <i class="fa-solid fa-caret-down d-flex justify-content-end ml-5" style="font-size: 15px;"></i>
+                  <!-- <img src="../assets/image/drop.png" alt="Dropdown" width="10px" class="ml-2"> -->
                 </a>
                 <div class="dropdown-menu" style="overflow-y: auto;">
                   <a class="dropdown-item" href="#">Action</a>
                   <a class="dropdown-item" href="#">Another action</a>
                   <a class="dropdown-item" href="#">Something else here</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Action 2</a>
+                  <a class="dropdown-item" href="#">Another action 2</a>
+                  <a class="dropdown-item" href="#">Something else here 2</a>
+                  <a class="dropdown-item" href="#">Action 3</a>
+                  <a class="dropdown-item" href="#">Another action 3</a>
+                  <a class="dropdown-item" href="#">Something else here 3</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-8 col-md-7 col-6 p-0">
+            <div class="col-lg-7">
               <div class="search-container d-flex">
                 <input type="search" id="gsearch" name="gsearch" placeholder="Search..." class="form-control">
                 <i class="fas fa-search mr-2"></i>
               </div>
             </div>
+
           </div>
         </div>
-      
 
-        <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-end align-items-center mt-4 mt-md-0">
-          <div>
-            <!-- Search icon (initially visible) -->
-            <i id="searchIcon" class="fas fa-search mr-2 d-xl-none d-inline-block d-md-inline-block d-lg-inline-block" style="font-size: 30px;" onclick="toggleSearch()"></i>
-            
-            <!-- Other icons -->
+        <div class="col-lg-2 col-md-3 col-sm-2 d-flex justify-content-end align-items-center mt-4">
+          <div class="">
             <i class="fa-regular fa-user"></i>
             <i class="fa-solid fa-cart-shopping"></i>
           </div>
-        
-          <!-- New div to contain the input field with absolute position -->
-          <div class="search-container1">
-            <input type="text" id="searchInput" class="search-input d-none" placeholder="Search...">
-          </div>
         </div>
-        
-        
-        
-        
+
       </div>
     </div>
   </section>
@@ -297,7 +261,7 @@
     <div class="collapse navbar-collapse text-center nav-resp" id="navbarNav">
       <ul class="navbar-nav home-link">
         <li class="nav-item active">
-          <a class="nav-link" href="#" style="color: whitesmoke; font-size: 15px;"><strong>HOME</strong></a>
+          <a class="nav-link" href="header.html" style="color: whitesmoke; font-size: 15px;"><strong>HOME</strong></a>
         </li>
         &nbsp;&nbsp;
         <li class="nav-item dropdown">
@@ -539,11 +503,6 @@
 
 
 
-
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script> -->
-
   <script>
     $(document).ready(function () {
       $('#carouselExampleControls').carousel({
@@ -551,25 +510,6 @@
         pause: 'hover'  // Pause the carousel when mouse is over the carousel
       });
     });
-
-    function toggleSearch() {
-  var input = document.getElementById('searchInput');
-  var icon = document.getElementById('searchIcon');
-
-  input.classList.toggle('d-none');
-  input.classList.toggle('show');
-  
-  // Toggle the search icon with the close icon
-  if (input.classList.contains('show')) {
-    icon.classList.remove('fa-search');
-    icon.classList.add('fa-times'); // Add close icon
-  } else {
-    icon.classList.remove('fa-times');
-    icon.classList.add('fa-search'); // Add search icon
-  }
-}
-
-
   </script>
 
 </body>
