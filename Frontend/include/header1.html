@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/linearicons/1.0.0/font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Almeera Ecommerce Web site</title>
+</head>
+<style>
+  .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .dropdown {
+    margin-right: 0;
+
+  }
+
+
+  .search-container {
+    position: relative;
+    width: 500px;
+    margin-left: 0;
+
+  }
+
+
+  .search-container input {
+    width: 100%;
+    padding: 8px 30px 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+
+  .search-container i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 18px;
+
+  }
+
+
+  @media (max-width: 767px) {
+    .d-flex {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .search-container {
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .dropdown {
+      margin-right: 0;
+    }
+  }
+
+  .no-space {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 767px) {
+    .search-container input {
+      width: 100%;
+    }
+  }
+
+  .col-md-3 {
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  .list-unstyled li {
+    margin-bottom: 5px;
+  }
+
+  .container-fluid {
+    padding: 2rem 3rem;
+  }
+
+
+  .home-link {
+    margin-left: 400px;
+    /* For larger screens */
+  }
+
+  @media (max-width: 768px) {
+    .home-link {
+      margin-left: 10px;
+    }
+  }
+
+  /* Align the navbar-toggler to the left */
+  .navbar-toggler {
+    margin-right: 0 !important;
+  }
+
+
+  @media (max-width: 768px) {
+    .search-container input {
+      width: 100%;
+    }
+
+    .dropdown {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .col-4 {
+      flex: 1 0 100%;
+      margin-bottom: 15px;
+    }
+
+    .col-lg-6,
+    .col-md-6 {
+      margin-bottom: 15px;
+    }
+
+    .col-12 {
+      flex: 1;
+    }
+
+    .mr-3 {
+      margin-right: 10px;
+    }
+  }
+
+
+  i.fa-regular,
+  i.fa-solid {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+  }
+
+
+  @media (max-width: 1170px) {
+
+
+    .dropdown,
+    .search-container {
+      display: none !important;
+    }
+  }
+</style>
+
+<body>
+  <!--========================= START HEADER PART 1========================-->
+  <section>
+    <div class="container">
+      <div class="row" style="font-size: 14px;">
+
+        <div class="col-lg-12 d-flex justify-content-end text-left">
+          <p class="d-none d-md-block" style="color: black;">Why Mill Direct Blanks?</p>
+          <p class="ml-3 d-none d-md-block" style="color: black;">About Us</p>
+          <p class="ml-3 d-none d-md-block" style="color: black;">Contact Us</p>
+          <p class="ml-3 d-none d-md-block" style="color: black;">
+            <i class="fas fa-envelope"></i>
+            Inquiries: info@milldirectblanks.com
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--=========================  END HEADER PART 1 ========================= -->
+
+  <!--=========================  START HEADER PART 2 ========================= -->
+
+  <section>
+    <div class="container">
+      <div class="row d-flex align-items-center justify-content-between">
+
+        <div class="col-lg-2 col-md-3 col-sm-4 mb-3 mb-md-0">
+          <img src="../assets/image/logo.png" alt="LOGO" class="img-fluid" style="max-width: 120px;">
+        </div>
+
+        <div class="col-lg-6 mb-3 mb-md-0">
+          <div class="row">
+            <div class="col-lg-4">
+
+              <div class="dropdown">
+                <a class="btn btn-outline-dark form-control d-flex align-items-center" href="#" role="button"
+                  data-toggle="dropdown" aria-expanded="false">
+                  Category
+                  <i class="fa-solid fa-caret-down d-flex justify-content-end ml-5" style="font-size: 15px;"></i>
+                  <!-- <img src="../assets/image/drop.png" alt="Dropdown" width="10px" class="ml-2"> -->
+                </a>
+                <div class="dropdown-menu" style="overflow-y: auto;">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Action 2</a>
+                  <a class="dropdown-item" href="#">Another action 2</a>
+                  <a class="dropdown-item" href="#">Something else here 2</a>
+                  <a class="dropdown-item" href="#">Action 3</a>
+                  <a class="dropdown-item" href="#">Another action 3</a>
+                  <a class="dropdown-item" href="#">Something else here 3</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="search-container d-flex">
+                <input type="search" id="gsearch" name="gsearch" placeholder="Search..." class="form-control">
+                <i class="fas fa-search mr-2"></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-2 d-flex justify-content-end align-items-center mt-4">
+          <div class="">
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--=========================  END HEADER PART 2 ========================= -->
+
+
+  <!--=========================  START HEADER PART 3 ========================= -->
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+
+    <button class="navbar-toggler ml-auto navbarrr" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center nav-resp" id="navbarNav">
+      <ul class="navbar-nav home-link">
+        <li class="nav-item active">
+          <a class="nav-link" href="header.html" style="color: whitesmoke; font-size: 15px;"><strong>HOME</strong></a>
+        </li>
+        &nbsp;&nbsp;
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+            <strong>CATEGORIES</strong>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">All</a>
+            <a class="dropdown-item" href="#">Fleece</a>
+            <a class="dropdown-item" href="#">Tees</a>
+          </div>
+        </li>&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link" href="youth.html" style="color: whitesmoke; font-size: 15px;"><strong>ADULTS</strong></a>
+        </li>&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link" href="youth.html" style="color: whitesmoke; font-size: 15px;"><strong>WOMEN</strong></a>
+        </li>&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link" href="youth.html" style="color: whitesmoke; font-size: 15px;"><strong>YOUTH</strong></a>
+        </li>&nbsp;&nbsp;
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+            <strong>COLLECTIONS</strong>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">All</a>
+            <a class="dropdown-item" href="#">Fleece</a>
+            <a class="dropdown-item" href="#">Tees</a>
+          </div>
+        </li>&nbsp;&nbsp;
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+            <strong>FLEECE STYLES</strong>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">All</a>
+            <a class="dropdown-item" href="#">Fleece</a>
+            <a class="dropdown-item" href="#">Tees</a>
+          </div>
+        </li>&nbsp;&nbsp;
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+            <strong>T & T Styles</strong>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">All</a>
+            <a class="dropdown-item" href="#">Fleece</a>
+            <a class="dropdown-item" href="#">Tees</a>
+          </div>
+        </li>&nbsp;&nbsp;
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+            <strong>FINISHES</strong>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">All</a>
+            <a class="dropdown-item" href="#">Fleece</a>
+            <a class="dropdown-item" href="#">Tees</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+  </nav>
+
+  <!--=========================  END HEADER PART 3 ========================= -->
+
+
+  <!--=========================  START SLIDER ========================= -->
+
+
+  <div class="container">
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../assets/image/banner1.jpg" class="d-block w-100" alt="Image">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/image/banner2.jpg" class="d-block w-100" alt="Image">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/image/banner3.jpg" class="d-block w-100" alt="Image">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/image/banner4.jpg" class="d-block w-100" alt="Image">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/image/banner5.jpg" class="d-block w-100" alt="Image">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/image/banner6.jpg" class="d-block w-100" alt="Image">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/image/banner7.jpg" class="d-block w-100" alt="Image">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/image/banner8.jpg" class="d-block w-100" alt="Image">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/image/banner8.png" class="d-block w-100" alt="Image">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/image/banner9.jpg" class="d-block w-100" alt="Image">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/image/banner10.jpg" class="d-block w-100" alt="Image">
+        </div>
+      </div>
+      <!-- Carousel controls (optional) -->
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!--=========================  END SLIDER ========================= -->
+
+  <!--=========================  START FOOTER PART 1 ========================= -->
+
+
+  <section class="mt-5" style="background-color: rgb(49, 49, 49);">
+    <div class="container text-white">
+      <div class="row vh-50 d-flex align-items-center">
+        <!-- Column 1 (Logo and Description) -->
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <div>
+            <div class="text-start mb-3 mt-3">
+              <!-- Logo -->
+              <img src="../assets/image/logofooter.png" alt="LOGO" width="100px">
+            </div>
+            <p>
+              At Mill Direct Blanks, we draw on 40 years of experience in factories and supply chains to provide
+              high-quality products at low prices. By shipping directly to the nearest port and producing in low-wage
+              countries like Pakistan, we cut costs and pass the savings on to you. Our blank apparel is customizable,
+              offering flexibility in styles, colors, and fabrics to help you stand out. Committed to eco-friendly and
+              ethical sourcing, we ensure our products meet your standards while supporting sustainable practices. Mill
+              Direct Blanks: Quality, affordability, and customization you can trust.
+            </p>
+          </div>
+        </div>
+
+        <!-- Column 2 (Information) -->
+        <div
+          class="col-lg-3 col-md-4 col-12 mb-4 mb-lg-0 d-lg-flex d-xl-flex justify-content-center justify-content-sm-start">
+          <div class="text-start">
+            <h3 class="mb-3">Information</h3>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">About Us</a></li>
+              <li><a href="#" class="text-white">Shipping and Delivery</a></li>
+              <li><a href="#" class="text-white">Data Sheet Legend</a></li>
+              <li><a href="#" class="text-white">MOV, Pricing Quotes</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 3 (Services) -->
+        <div
+          class="col-lg-3 col-md-4 col-12 mb-4 mb-lg-0 d-lg-flex d-xl-flex justify-content-center justify-content-sm-start">
+          <div class="text-start">
+            <h3 class="mb-3">Services</h3>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Custom Manufacturing</a></li>
+              <li><a href="#" class="text-white">Pros & Cons</a></li>
+              <li><a href="#" class="text-white">Product Sourcing</a></li>
+              <li><a href="#" class="text-white">Quality Assurance</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 4 (Resources) -->
+        <div
+          class="col-lg-2 col-md-4 col-12 mb-4 mb-lg-0 d-lg-flex d-xl-flex justify-content-center justify-content-sm-start">
+          <div class="text-start">
+            <h3 class="mb-3">Resources</h3>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Custom Manufacturing</a></li>
+              <li><a href="#" class="text-white">Pros & Cons</a></li>
+              <li><a href="#" class="text-white">Product Sourcing</a></li>
+              <li><a href="#" class="text-white">Quality Assurance</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=========================  END FOOTER PART 1 ========================= -->
+
+  <!--=========================  START FOOTER PART 2 ========================= -->
+
+  <section style="background-color: #000;">
+    <div class="container">
+      <div class="row" style="font-size: 14px;">
+        <div class="col-lg-12 d-flex justify-content-center align-items-center" style="margin-top: 6px;">
+          <strong>
+            <p style="color: antiquewhite; display: inline-flex; align-items: center;">
+              <i class="fas fa-copyright" style="color: antiquewhite; margin-right: 5px;"></i>
+              2025 HORIZON IMPEX, INC . ATLANTA, GEORGIA, U.S.A ALL RIGHTS RESERVED
+            </p>
+          </strong>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--=========================  END FOOTER PART 2 ========================= -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+
+  <script>
+    $(document).ready(function () {
+      $('#carouselExampleControls').carousel({
+        interval: 3000, // Set the interval for the carousel (in milliseconds)
+        pause: 'hover'  // Pause the carousel when mouse is over the carousel
+      });
+    });
+  </script>
+
+</body>
+
+</html>
