@@ -3,928 +3,756 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/linearicons/1.0.0/font.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/linearicons/1.0.0/font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Almeera Ecommerce Website</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
-    <title>Almeera Ecommerce Website</title>
+
+  
+
+
 </head>
-
 <style>
-    .d-flex {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
+  .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-    .dropdown {
-        margin-right: 0;
+  .dropdown {
+    margin-right: 0;
 
-    }
+  }
+
+  .search-container {
+    position: relative;
+    width: 500px;
+    margin-left: 0;
+
+  }
+
+  .search-container input {
+    padding: 8px 30px 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  .search-container i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 18px;
+
+  }
+
+  .no-space {
+    margin-bottom: 0;
+  }
+
+  .col-md-3 {
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  .list-unstyled li {
+    margin-bottom: 5px;
+  }
+
+  .container-fluid {
+    padding: 2rem 3rem;
+  }
+
+  /* 
+  .home-link {
+    margin-left: 400px;
+  } */
+
+  .navbar-toggler {
+    margin-right: 0 !important;
+  }
+
+  i.fa-regular,
+  i.fa-solid {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+  }
 
 
+  @media (max-width: 1200px) {
+
+    .dropdown1,
     .search-container {
-        position: relative;
-        width: 500px;
-        margin-left: 0;
-
+      display: none !important;
     }
 
 
-    .search-container input {
-        width: 100%;
-        padding: 8px 30px 8px 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        font-size: 16px;
-    }
-
-
-    .search-container i {
-        position: absolute;
-        top: 50%;
-        right: 10px;
-        transform: translateY(-50%);
-        color: #aaa;
-        font-size: 18px;
-
-    }
-
-
-    @media (max-width: 767px) {
-        .d-flex {
-            flex-direction: column;
-            width: 100%;
-        }
-
-        .search-container {
-            margin-top: 10px;
-            width: 100%;
-        }
-
-        .dropdown {
-            margin-right: 0;
-        }
-    }
-
-    .no-space {
-        margin-bottom: 0;
-    }
-
-    @media (max-width: 767px) {
-        .search-container input {
-            width: 100%;
-        }
-    }
-</style>
-<style>
-    .col-md-3 {
-        padding-bottom: 10px;
-    }
-
-    h3 {
-        margin-bottom: 1rem;
-    }
-
-    .list-unstyled li {
-        margin-bottom: 5px;
-    }
-
-    .container-fluid {
-        padding: 2rem 3rem;
-    }
-
-
-
-
-
-
-
-    /* @media (max-width: 768px) {
-        .search-container input {
-            width: 100%;
-        }
-
-        .dropdown {
-            width: 100%;
-            margin-bottom: 10px;
-        }
-
-        .col-4 {
-            flex: 1 0 100%;
-            margin-bottom: 15px;
-        }
-
-        .col-lg-6,
-        .col-md-6 {
-            margin-bottom: 15px;
-        }
-
-        .col-12 {
-            flex: 1;
-        }
-
-        .mr-3 {
-            margin-right: 10px;
-        }
+   
+    /* .search-container {
+      display: none !important;
     } */
+  }
 
-
-    i.fa-regular,
-    i.fa-solid {
-        font-size: 30px;
-        width: 40px;
-        height: 40px;
+  @media (max-width: 991px) {
+    .col-lg-2 .logo_pic {
+      max-width: 120px;
     }
+  }
 
-    .categories {
-        text-decoration: underline;
-    }
+  .col-lg-2 .logo_pic {
+    max-width: 120px;
+  }
 
-    .custom-margin {
-        /* margin-top: -100px; */
-        margin-top: -300px;
-        margin-left: 50px;
-    }
+  .search-container1 {
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+  }
 
-    /* For medium-sized screens and below (Tablets and Mobile) */
-    @media (max-width: 768px) {
-        .custom-margin {
-            /* margin-top: -100px; */
+  .search-input {
+    width: 0;
+    padding: 5px;
+    font-size: 16px;
+    opacity: 0;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
 
-            margin-top: -50px;
-            /* Reduce margin for smaller screens */
-        }
-    }
+  .search-input.show {
+    width: 150px;
+    opacity: 1;
+  }
 
-    /* For small screens (Mobile) */
-    @media (max-width: 576px) {
-        .custom-margin {
-            margin-top: 0;
-            /* Remove margin for extra small screens */
-        }
-    }
-
-
-    .category-toggle {
-        cursor: pointer;
-        font-weight: bold;
-        color: #333;
-        font-size: 18px;
-    }
-
-    /* By default, hide the categories list on small screens */
-    @media (max-width: 576px) {
-        .categories-list {
-            display: none;
-            /* Hide categories list on small screens */
-        }
-
-        /* Style for the toggle button */
-        .category-toggle {
-            margin-bottom: 10px;
-        }
-    }
-
-    /* For larger screens, categories are shown */
-    @media (min-width: 577px) {
-        .categories-list {
-            display: block;
-            /* Always display on larger screens */
-        }
-    }
-    @media (max-width: 576px) {
-    .cardimp{
-     margin-left: -100px;
-    }
-    /* .categories{
-    margin-left: 500px;
-   } */
-}
-
-@media (min-width: 320px) and (max-width: 570px) {
-    .categories {
-       
-    }
-}
-
+  .underline-none a {
+    text-decoration: none;
+  }
 </style>
+
+
+
 
 
 
 <body>
+  <!--========================= START HEADER PART 1========================-->
 
-    <!--========================= START HEADER PART ========================-->
-    <section>
-        <div class="container">
-            <div class="row" style="font-size: 14px;">
+  <section>
+    <div class="container">
+      <div class="row" style="font-size: 14px;">
 
-                <div class="col-lg-12 d-flex justify-content-end text-left">
-                    <p class="d-none d-md-block" style="color: black;">Why Mill Direct Blanks?</p>
-                    <p class="ml-3 d-none d-md-block" style="color: black;">About Us</p>
-                    <p class="ml-3 d-none d-md-block" style="color: black;">Contact Us</p>
-                    <p class="ml-3 d-none d-md-block" style="color: black;">
-                        <i class="fas fa-envelope"></i>
-                        Inquiries: info@milldirectblanks.com
-                    </p>
-                </div>
-
-            </div>
+        <div class="col-lg-12 d-flex justify-content-end text-left">
+          <p class="d-none d-md-block" style="color: black;">Why Mill Direct Blanks?</p>
+          <p class="ml-3 d-none d-md-block" style="color: black;">About Us</p>
+          <p class="ml-3 d-none d-md-block" style="color: black;">Contact Us</p>
+          <p class="ml-3 d-none d-md-block" style="color: black;">
+            <i class="fas fa-envelope"></i>
+            Inquiries: info@milldirectblanks.com
+          </p>
         </div>
-    </section>
 
+      </div>
+    </div>
+  </section>
 
+  <!--=========================  END HEADER PART 1 ========================= -->
 
+  <!--=========================  START HEADER PART 2 ========================= -->
 
+  <section>
+    <div class="container">
+      <div class="row d-flex align-items-center justify-content-between flex-wrap flex-md-nowrap">
 
-
-    <!--=========================  END HEADER PART 1 ========================= -->
-
-
-
-
-    <section>
-        <div class="container">
-            <div class="row d-flex align-items-center justify-content-between flex-wrap flex-md-nowrap">
-
-                <div class="col-lg-2 col-md-4 col-sm-4 col-4 mb-3 mb-md-0 text-center">
-                    <img src="../assets/image/logo.png" alt="LOGO" class="img-fluid logo_pic">
-                </div>
-
-                <div class="col-lg-6 col-md-4 col-sm-4 col-2 mb-3 mb-md-0">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-5 col-6 p-0">
-                            <div class="dropdown">
-                                <a class="btn btn-outline-dark form-control d-flex align-items-center" href="#"
-                                    role="button" data-toggle="dropdown" aria-expanded="false">
-                                    Category
-                                    <i class="fa-solid fa-caret-down d-flex justify-content-end ml-lg-1 ml-xl-5"
-                                        style="font-size: 15px;"></i>
-                                </a>
-                                <div class="dropdown-menu" style="overflow-y: auto;">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-8 col-md-7 col-6 p-0">
-                            <div class="search-container d-flex">
-                                <input type="search" id="gsearch" name="gsearch" placeholder="Search..."
-                                    class="form-control">
-                                <i class="fas fa-search mr-2"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div
-                    class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-end align-items-center mt-4 mt-md-0">
-                    <div>
-                        <!-- Search icon (initially visible) -->
-                        <i id="searchIcon"
-                            class="fas fa-search mr-2 d-xl-none d-inline-block d-md-inline-block d-lg-inline-block"
-                            style="font-size: 30px;" onclick="toggleSearch()"></i>
-
-                        <!-- Other icons -->
-                        <i class="fa-regular fa-user"></i>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-
-                    <!-- New div to contain the input field with absolute position -->
-                    <div class="search-container1">
-                        <input type="text" id="searchInput" class="search-input d-none" placeholder="Search...">
-                    </div>
-                </div>
-
-
-
-
-            </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-4 mb-3 mb-md-0 text-center">
+          <img src="../assets/image/logo.png" alt="LOGO" class="img-fluid logo_pic">
         </div>
-    </section>
 
-    <style>
-        @media (max-width: 1170px) {
+        <div class="col-lg-2 col-md-1 col-sm-1 col-1 mb-3 mb-md-0 text-center">
 
-
-            .dropdown,
-            .search-container {
-                display: none !important;
-            }
-        }
-
-        .col-lg-2.col-md-3.col-sm-2.d-flex {}
-    </style>
+        </div>
 
 
+        <div class="col-lg-6 col-md-2 col-sm-3 col-1 mb-3 mb-md-0">
+          <div class="row">
+            <div class="col-lg-3 col-md-5 col-6 p-0">
+              <div class="dropdown1">
+                <a class="btn btn-outline-dark form-control d-flex align-items-center" href="#" role="button"
+                  data-toggle="dropdown" aria-expanded="false">
+                  Category
+                  <i class="fa-solid fa-caret-down d-flex justify-content-end ml-lg-1 ml-xl-5"
+                    style="font-size: 15px;"></i>
+                </a>
+                <div class="dropdown-menu" style="overflow-y: auto;">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 col-md-7 col-6 p-0">
+              <div class="search-container d-flex">
+                <input type="search" id="gsearch" name="gsearch" placeholder="Search..." class="form-control">
+                <i class="fas fa-search mr-2"></i>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+        <div class="col-lg-2 col-md-5 col-sm-4 col-6 d-flex justify-content-end align-items-center mt-4 mt-md-0">
+          <div>
+            <i id="searchIcon" class="fas fa-search mr-2 d-xl-none d-inline-block d-md-inline-block d-lg-inline-block"
+              style="font-size: 30px;" onclick="toggleSearch()"></i>
 
-        <!-- <a class="navbar-brand" href="#" style="color: whitesmoke;">Brand</a> -->
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
 
-        <!-- Button for collapsing the navbar (hamburger menu) -->
+          <div class="search-container1">
+            <input type="text" id="searchInput" class="search-input d-none" placeholder="Search...">
+          </div>
+        </div>
 
-        <!-- <button class="navbar-toggler navbar-toggler-left navbarrr" type="button" data-toggle="collapse" data-target="#navbarNav" 
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> -->
+      </div>
+    </div>
+  </section>
 
-
-        <button class="navbar-toggler ml-auto navbarrr" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar items -->
-        <!-- <div class="collapse navbar-collapse text-center" style="margin-left: 370px;" id="navbarNav"> -->
-        <div class="collapse navbar-collapse text-center nav-resp" id="navbarNav">
-            <ul class="navbar-nav home-link">
-                <li class="nav-item active">
-                    <a class="nav-link" href="header.html"
-                        style="color: whitesmoke; font-size: 15px;"><strong>HOME</strong></a>
-                </li>
-                &nbsp;&nbsp;
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
-                        <strong>CATEGORIES</strong>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">All</a>
-                        <a class="dropdown-item" href="#">Fleece</a>
-                        <a class="dropdown-item" href="#">Tees</a>
-                    </div>
-                </li>&nbsp;&nbsp;
-                <li class="nav-item">
-                    <a class="nav-link" href="youth.html"
-                        style="color: whitesmoke; font-size: 15px;"><strong>ADULTS</strong></a>
-                </li>&nbsp;&nbsp;
-                <li class="nav-item">
-                    <a class="nav-link" href="youth.html"
-                        style="color: whitesmoke; font-size: 15px;"><strong>WOMEN</strong></a>
-                </li>&nbsp;&nbsp;
-                <li class="nav-item">
-                    <a class="nav-link" href="youth.html"
-                        style="color: whitesmoke; font-size: 15px;"><strong>YOUTH</strong></a>
-                </li>&nbsp;&nbsp;
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
-                        <strong>COLLECTIONS</strong>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">All</a>
-                        <a class="dropdown-item" href="#">Fleece</a>
-                        <a class="dropdown-item" href="#">Tees</a>
-                    </div>
-                </li>&nbsp;&nbsp;
+  <!--=========================  END HEADER PART 2 ========================= -->
 
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
-                        <strong>FLEECE STYLES</strong>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">All</a>
-                        <a class="dropdown-item" href="#">Fleece</a>
-                        <a class="dropdown-item" href="#">Tees</a>
-                    </div>
-                </li>&nbsp;&nbsp;
+  <!--=========================  START HEADER PART 3 ========================= -->
 
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
-                        <strong>T & T Styles</strong>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">All</a>
-                        <a class="dropdown-item" href="#">Fleece</a>
-                        <a class="dropdown-item" href="#">Tees</a>
-                    </div>
-                </li>&nbsp;&nbsp;
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black; ">
+    <div class="container">
+      <button class="navbar-toggler ml-auto navbarrr" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center nav-resp" id="navbarNav">
+        <ul class="navbar-nav home-link ">
+          <li class="nav-item active">
+            <a class="nav-link" href="header.html" style="color: whitesmoke; font-size: 15px;"><strong>HOME</strong></a>
+          </li>
+
+          <li class="nav-item dropdown ml-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+              <strong>CATEGORIES</strong>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">All</a>
+              <a class="dropdown-item" href="#">Fleece</a>
+              <a class="dropdown-item" href="#">Tees</a>
+            </div>
+          </li>
+          <li class="nav-item ml-2">
+            <a class="nav-link" href="youth.html" style="color: whitesmoke; font-size: 15px;"><strong>ADULTS</strong></a>
+          </li>
+          <li class="nav-item ml-2">
+            <a class="nav-link" href="youth.html" style="color: whitesmoke; font-size: 15px;"><strong>WOMEN</strong></a>
+          </li>
+          <li class="nav-item ml-2">
+            <a class="nav-link" href="youth.html" style="color: whitesmoke; font-size: 15px;"><strong>YOUTH</strong></a>
+          </li>
+
+          <li class="nav-item dropdown ml-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+              <strong>COLLECTIONS</strong>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">All</a>
+              <a class="dropdown-item" href="#">Fleece</a>
+              <a class="dropdown-item" href="#">Tees</a>
+            </div>
+          </li>
 
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
-                        <strong>FINISHES</strong>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">All</a>
-                        <a class="dropdown-item" href="#">Fleece</a>
-                        <a class="dropdown-item" href="#">Tees</a>
-                    </div>
-                </li>
+          <li class="nav-item dropdown ml-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+              <strong>FLEECE STYLES</strong>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">All</a>
+              <a class="dropdown-item" href="#">Fleece</a>
+              <a class="dropdown-item" href="#">Tees</a>
+            </div>
+          </li>
+
+
+          <li class="nav-item dropdown ml-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+              <strong>T & T Styles</strong>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">All</a>
+              <a class="dropdown-item" href="#">Fleece</a>
+              <a class="dropdown-item" href="#">Tees</a>
+            </div>
+          </li>
+
+
+          <li class="nav-item dropdown ml-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+              <strong>FINISHES</strong>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">All</a>
+              <a class="dropdown-item" href="#">Fleece</a>
+              <a class="dropdown-item" href="#">Tees</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+  <!--=========================  END HEADER PART 3 ========================= -->
+
+
+  <!--=========================  START SLIDER ========================= -->
+
+
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+        <!-- <div class="col-12 text-center">
+        <img src="../assets/image/YOUTH.png" alt="BannerImages" style="max-width: 100%; height: auto;">
+    </div> -->
+
+        <div class="col-12 text-center">
+            <img src="../assets/image/YOUTH.png" alt="BannerImages" class="img-fluid"
+                style="max-width: 100%; height: auto;">
+        </div>
+
+
+  
+        <div class="dropdown1 mt-2">
+            <button class="btn btn-outline-black dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Default Sorting
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
         </div>
 
 
-    </nav>
-
-
-    <style>
-        .home-link {
-            margin-left: 400px;
-            /* For larger screens */
-        }
-
-        @media (max-width: 768px) {
-            .home-link {
-                margin-left: 10px;
-                /* For mobile screens */
-            }
-        }
-
-        /* Align the navbar-toggler to the left */
-        .navbar-toggler {
-            margin-right: 0 !important;
-            /* Remove any left margin */
-        }
-
-        /* You can also set margin with Bootstrap's ml-*-classes if you need */
-        /* .navbar-toggler-left {
-margin-left: 230px;  
-} */
-
-        /* .nav-resp{
-
-} */
-    </style>
-
-
-    <!-- start -->
-    <style>
-        /* Custom CSS to set the outline color to black */
-        .dropdown-toggle {
-            border: 1px solid black;
-
-        }
-
-        /* Optional: Change the button color if needed */
-        .dropdown-toggle:focus {
-            box-shadow: none;
-            /* Remove the default Bootstrap focus shadow */
-        }
-
-        .container .row {
-            display: flex;
-            justify-content: flex-start;
-            /* Align items to the left */
-        }
-
-        /* Optional: Add spacing between dropdown and products */
-        .dropdown {
-            margin-bottom: 20px;
-            /* Adjust spacing as needed */
-
-        }
-
-        .dropdown-menu {
-            max-height: 200px;
-            /* Set max height for the dropdown */
-            overflow-y: auto;
-            /* Enable scrolling only if content exceeds max-height */
-        }
-
-        /* .dropdown1 .dropdown-toggle {
-margin-left: 920px;
-width: 170px;
-
-} */
-        .dropdown1 .dropdown-toggle {
-            width: 100%;
-            /* margin-left: 920px; */
-            /* Make the button full width on small screens */
-        }
-
-        /* Responsive dropdown positioning */
-        @media (min-width: 576px) {
-            .dropdown1 .dropdown-toggle {
-                margin-left: 920px;
-                width: auto;
-               
-            }
-        }
-
-        @media (max-width: 576px) {
-        .dropdown1 .dropdown-toggle {
-            display: none; /* Hide dropdown on small screens */
-        }
-    }
-
-
-
- 
 
 
 
 
 
-    </style>
+        <div class="d-flex cardimp">
+
+            <!-- section 1 -->
+
+            <!-- category section -->
+            <div>
+                <p class="categories mt-4 ml-3" style="font-size: 20px;" onclick="toggleCategories()"><strong>CATEGORIES</strong></p>
+                <ul class="categories-list">
+                    <li><strong>ALL</strong></li>
+                    <ul style="font-weight: 500; color: #333333;">
+                        <li>FLEECE</li>
+                        <li>TEES & LT. WEIGHT TOPS</li>
+                    </ul>
+
+                    <li><strong>COLLECTION</strong></li>
+                    <ul style="font-weight: 500; color: #333333;">
+                        <li>BASIC</li>
+                        <li>CORDED</li>
+                        <li>FASHION</li>
+                        <li>NANTUCKET FLEECE</li>
+                        <li>RESORT</li>
+                        <li>SUSTAINABLE</li>
+                        <li>TRI BLEND</li>
+                        <li>VINTAGE</li>
+                    </ul>
+
+                    <li><strong>FINISHES</strong></li>
+                    <ul style="font-weight: 500; color: #333333;">
+                        <li>ACID WASH</li>
+                        <li>COOL PIGMENT / OIL WASH</li>
+                        <li>GARMENT WASH</li>
+                        <li>MINERAL WASH</li>
+                        <li>PIGMENT DYE</li>
+                        <li>GRADIENT DIP DYE</li>
+                        <li>MILL (PIECE) DYE</li>
+                        <li>TIE DYE</li>
+                    </ul>
+
+                    <li><strong>FIT</strong></li>
+                    <ul style="font-weight: 500; color: #333333;">
+                        <li>ADULTS</li>
+                        <li>WOMEN</li>
+                        <li>YOUTH</li>
+                    </ul>
+                    <!-- <ul> -->
+                    <li><strong>FLEECE STYLE</strong></li>
+                    <ul style="font-weight: 500; color: #333333;">
+                        <li>CREW NECK FLEECE</li>
+                        <li>CROPPED FLEECE</li>
+                        <li>DROP SHOULDER</li>
+                        <li>FULL ZIP HOODIES</li>
+                        <li>FULL ZIP JACKET</li>
+                        <li>JOGGING PANT</li>
+                        <li>PULLOVBER HOODIES</li>
+                        <li>QUARTER ZIP JACKET</li>
+                        <li>RAGLAN SLEEVE</li>
+                        <li>SWEAT PANTS</li>
+                        <li>SHORTS</li>
+                        <li>V-NECK FLEECE</li>
+                    </ul>
+                    <!-- </ul> -->
+
+
+                    <!-- <ul> -->
+                    <li><strong>T & T STYLES</strong></li>
+                    <ul style="font-weight: 500; color: #333333;">
+                        <li>BUTTON PLACKET T & T</li>
+                        <li>CREW NECK</li>
+                        <li>CROPPED T & T</li>
+                        <li>LONG SLEEVE</li>
+                        <li>POCKET TEES</li>
+                        <li>ROUND BOTTOM</li>
+                        <li>SCOOP NECK</li>
+                        <li>TANK TOPS</li>
+                        <li>SHORT SLEEVE</li>
+                        <li>T-SHIRT HOODIE</li>
+                        <li>V-NECK</li>
+                    </ul>
 
 
 
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <!-- <div class="col-12 text-center">
-            <img src="../assets/image/YOUTH.png" alt="BannerImages" style="max-width: 100%; height: auto;">
-        </div> -->
 
-            <div class="col-12 text-center">
-                <img src="../assets/image/YOUTH.png" alt="BannerImages" class="img-fluid"
-                    style="max-width: 100%; height: auto;">
-            </div>
-
-
-      
-            <div class="dropdown1 mt-2">
-                <button class="btn btn-outline-black dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Default Sorting
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
             </div>
 
+            <!-- end category section -->
+            <!-- section 2 -->
+
+
+
+
+            <!-- card section -->
 
 
 
 
 
+            <div class="container">
 
-            <div class="d-flex cardimp">
+                <!-- First Section -->
+                <!-- <div class="row mt-5"> -->
 
-                <!-- section 1 -->
+                <div class="row custom-margin">
 
-                <!-- category section -->
-                <div>
-                    <p class="categories mt-4 ml-3" style="font-size: 20px;" onclick="toggleCategories()"><strong>CATEGORIES</strong></p>
-                    <ul class="categories-list">
-                        <li><strong>ALL</strong></li>
-                        <ul style="font-weight: 500; color: #333333;">
-                            <li>FLEECE</li>
-                            <li>TEES & LT. WEIGHT TOPS</li>
-                        </ul>
-
-                        <li><strong>COLLECTION</strong></li>
-                        <ul style="font-weight: 500; color: #333333;">
-                            <li>BASIC</li>
-                            <li>CORDED</li>
-                            <li>FASHION</li>
-                            <li>NANTUCKET FLEECE</li>
-                            <li>RESORT</li>
-                            <li>SUSTAINABLE</li>
-                            <li>TRI BLEND</li>
-                            <li>VINTAGE</li>
-                        </ul>
-
-                        <li><strong>FINISHES</strong></li>
-                        <ul style="font-weight: 500; color: #333333;">
-                            <li>ACID WASH</li>
-                            <li>COOL PIGMENT / OIL WASH</li>
-                            <li>GARMENT WASH</li>
-                            <li>MINERAL WASH</li>
-                            <li>PIGMENT DYE</li>
-                            <li>GRADIENT DIP DYE</li>
-                            <li>MILL (PIECE) DYE</li>
-                            <li>TIE DYE</li>
-                        </ul>
-
-                        <li><strong>FIT</strong></li>
-                        <ul style="font-weight: 500; color: #333333;">
-                            <li>ADULTS</li>
-                            <li>WOMEN</li>
-                            <li>YOUTH</li>
-                        </ul>
-                        <!-- <ul> -->
-                        <li><strong>FLEECE STYLE</strong></li>
-                        <ul style="font-weight: 500; color: #333333;">
-                            <li>CREW NECK FLEECE</li>
-                            <li>CROPPED FLEECE</li>
-                            <li>DROP SHOULDER</li>
-                            <li>FULL ZIP HOODIES</li>
-                            <li>FULL ZIP JACKET</li>
-                            <li>JOGGING PANT</li>
-                            <li>PULLOVBER HOODIES</li>
-                            <li>QUARTER ZIP JACKET</li>
-                            <li>RAGLAN SLEEVE</li>
-                            <li>SWEAT PANTS</li>
-                            <li>SHORTS</li>
-                            <li>V-NECK FLEECE</li>
-                        </ul>
-                        <!-- </ul> -->
-
-
-                        <!-- <ul> -->
-                        <li><strong>T & T STYLES</strong></li>
-                        <ul style="font-weight: 500; color: #333333;">
-                            <li>BUTTON PLACKET T & T</li>
-                            <li>CREW NECK</li>
-                            <li>CROPPED T & T</li>
-                            <li>LONG SLEEVE</li>
-                            <li>POCKET TEES</li>
-                            <li>ROUND BOTTOM</li>
-                            <li>SCOOP NECK</li>
-                            <li>TANK TOPS</li>
-                            <li>SHORT SLEEVE</li>
-                            <li>T-SHIRT HOODIE</li>
-                            <li>V-NECK</li>
-                        </ul>
-
-
-
-
-                    </ul>
-                </div>
-
-                <!-- end category section -->
-                <!-- section 2 -->
-
-
-
-
-                <!-- card section -->
-
-
-
-
-
-                <div class="container">
-
-                    <!-- First Section -->
-                    <!-- <div class="row mt-5"> -->
-
-                    <div class="row custom-margin">
-
-                        <div class="col-12 col-sm-6 col-md-3 mb-4">
-                            <div class="card" style="border: none;">
-                                <a href="../include/productdetail.html">
-                                    <img src="../assets/image/Shirt1/GRAPHITE HEATER.png" class="card-img-top"
-                                        alt="ProductImage">
-                                </a>
-                                <div class="card-body">
-                                    <p class="card-text"
-                                        style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
-                                        10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
-                                    </p>
-                                    <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
-                                    <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
-                                        Starting From: <span style="color: maroon;">$</span> 3.23
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-3 mb-4">
-                            <div class="card" style="border: none;"> <a href="../include/productdetail.html">
-                                    <img src="../assets/image/Shirt1/BLACK.png" class="card-img-top"
-                                        alt="ProductImage"></a>
-                                <div class="card-body">
-                                    <p class="card-text"
-                                        style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
-                                        10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
-                                    </p>
-                                    <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
-                                    <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
-                                        Starting From: <span style="color: maroon;">$</span> 3.23
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3 mb-4">
-                            <div class="card" style="border: none;"><a href="../include/productdetail.html">
-                                    <img src="../assets/image/Shirt1/CHARCOAL.png" class="card-img-top"
-                                        alt="ProductImage"></a>
-                                <div class="card-body">
-                                    <p class="card-text"
-                                        style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
-                                        10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
-                                    </p>
-                                    <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
-                                    <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
-                                        Starting From: <span style="color: maroon;">$</span> 3.23
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3 mb-4">
-                            <div class="card" style="border: none;"><a href="../include/productdetail.html">
-                                    <img src="../assets/image/Shirt1/CHESTNUT.png" class="card-img-top"
-                                        alt="ProductImage"></a>
-                                <div class="card-body">
-                                    <p class="card-text"
-                                        style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
-                                        10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
-                                    </p>
-                                    <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
-                                    <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
-                                        Starting From: <span style="color: maroon;">$</span> 3.23
-                                    </p>
-                                </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <div class="card" style="border: none;">
+                            <a href="../include/productdetail.html">
+                                <img src="../assets/image/Shirt1/GRAPHITE HEATER.png" class="card-img-top"
+                                    alt="ProductImage">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
+                                    10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
+                                </p>
+                                <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
+                                <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
+                                    Starting From: <span style="color: maroon;">$</span> 3.23
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Second Section -->
-                    <div class="row mt-5 custom-margin">
-                        <div class="col-12 col-sm-6 col-md-3 mb-4">
-                            <div class="card" style="border: none;"><a href="../include/productdetail.html">
-                                    <img src="../assets/image/Shirt1/MAROON.png" class="card-img-top" alt="..."></a>
-                                <div class="card-body">
-                                    <p class="card-text"
-                                        style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
-                                        10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
-                                    </p>
-                                    <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
-                                    <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
-                                        Starting From: <span style="color: maroon;">$</span> 3.23
-                                    </p>
-                                </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <div class="card" style="border: none;"> <a href="../include/productdetail.html">
+                                <img src="../assets/image/Shirt1/BLACK.png" class="card-img-top"
+                                    alt="ProductImage"></a>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
+                                    10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
+                                </p>
+                                <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
+                                <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
+                                    Starting From: <span style="color: maroon;">$</span> 3.23
+                                </p>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-3 mb-4">
-                            <div class="card" style="border: none;"><a href="../include/productdetail.html">
-                                    <img src="../assets/image/Shirt1/MIDNIGHT.png" class="card-img-top" alt="..."></a>
-                                <div class="card-body">
-                                    <p class="card-text"
-                                        style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
-                                        10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
-                                    </p>
-                                    <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
-                                    <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
-                                        Starting From: <span style="color: maroon;">$</span> 3.23
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <div class="card" style="border: none;"><a href="../include/productdetail.html">
+                                <img src="../assets/image/Shirt1/CHARCOAL.png" class="card-img-top"
+                                    alt="ProductImage"></a>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
+                                    10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
+                                </p>
+                                <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
+                                <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
+                                    Starting From: <span style="color: maroon;">$</span> 3.23
+                                </p>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-md-3 mb-4">
-                            <div class="card" style="border: none;"><a href="../include/productdetail.html">
-                                    <img src="../assets/image/Shirt1/NAVY.png" class="card-img-top" alt="..."></a>
-                                <div class="card-body">
-                                    <p class="card-text"
-                                        style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
-                                        10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
-                                    </p>
-                                    <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
-                                    <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
-                                        Starting From: <span style="color: maroon;">$</span> 3.23
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3 mb-4">
-                            <div class="card" style="border: none;">
-                                <a href="../include/productdetail.html"><img src="../assets/image/Shirt1/OLIVE.png"
-                                        class="card-img-top" alt="..."></a>
-                                <div class="card-body">
-                                    <p class="card-text"
-                                        style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
-                                        10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
-                                    </p>
-                                    <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
-                                    <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
-                                        Starting From: <span style="color: maroon;">$</span> 3.23
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <div class="card" style="border: none;"><a href="../include/productdetail.html">
+                                <img src="../assets/image/Shirt1/CHESTNUT.png" class="card-img-top"
+                                    alt="ProductImage"></a>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
+                                    10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
+                                </p>
+                                <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
+                                <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
+                                    Starting From: <span style="color: maroon;">$</span> 3.23
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-
-                <!-- end card section -->
-
-
-
+                <!-- Second Section -->
+                <div class="row mt-5 custom-margin">
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <div class="card" style="border: none;"><a href="../include/productdetail.html">
+                                <img src="../assets/image/Shirt1/MAROON.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
+                                    10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
+                                </p>
+                                <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
+                                <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
+                                    Starting From: <span style="color: maroon;">$</span> 3.23
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <div class="card" style="border: none;"><a href="../include/productdetail.html">
+                                <img src="../assets/image/Shirt1/MIDNIGHT.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
+                                    10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
+                                </p>
+                                <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
+                                <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
+                                    Starting From: <span style="color: maroon;">$</span> 3.23
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <div class="card" style="border: none;"><a href="../include/productdetail.html">
+                                <img src="../assets/image/Shirt1/NAVY.png" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
+                                    10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
+                                </p>
+                                <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
+                                <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
+                                    Starting From: <span style="color: maroon;">$</span> 3.23
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <div class="card" style="border: none;">
+                            <a href="../include/productdetail.html"><img src="../assets/image/Shirt1/OLIVE.png"
+                                    class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <p class="card-text"
+                                    style="font-size: 15px; color: #121212; text-align: left; font-weight: 500; margin-bottom: 0;">
+                                    10050 | Adult 10 Ounces Superweight Fleece Crew Neck Sweat Shirt
+                                </p>
+                                <p style="color: #800000; font-weight: 500; margin-bottom: 0;">Style #: 10050</p>
+                                <p class="card-title" style="font-weight: 500; margin-bottom: 0;">
+                                    Starting From: <span style="color: maroon;">$</span> 3.23
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
-
-
-
-
+            <!-- end card section -->
 
 
 
         </div>
+
+
+
+
+
+
+
+
+
     </div>
+</div>
 
 
 
 
-    <section class="mt-5" style="background-color: rgb(49, 49, 49);">
-        <div class="container text-white">
-            <div class="row vh-50 d-flex align-items-center">
-                <!-- Column 1 (Logo and Description) -->
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <div>
-                        <div class="text-start mb-3 mt-3">
-                            <!-- Logo -->
-                            <img src="../assets/image/logofooter.png" alt="LOGO" width="100px">
-                        </div>
-                        <p>
-                            At Mill Direct Blanks, we draw on 40 years of experience in factories and supply chains to
-                            provide
-                            high-quality products at low prices. By shipping directly to the nearest port and producing
-                            in low-wage
-                            countries like Pakistan, we cut costs and pass the savings on to you. Our blank apparel is
-                            customizable,
-                            offering flexibility in styles, colors, and fabrics to help you stand out. Committed to
-                            eco-friendly and
-                            ethical sourcing, we ensure our products meet your standards while supporting sustainable
-                            practices.
-                            Mill
-                            Direct Blanks: Quality, affordability, and customization you can trust.
-                        </p>
-                    </div>
-                </div>
+  <!--=========================  END SLIDER ========================= -->
 
-                <!-- Column 2 (Information) -->
-                <div
-                    class="col-lg-3 col-md-4 col-12 mb-4 mb-lg-0 d-lg-flex d-xl-flex justify-content-center justify-content-sm-start">
-                    <div class="text-start">
-                        <h3 class="mb-3">Information</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-white">About Us</a></li>
-                            <li><a href="#" class="text-white">Shipping and Delivery</a></li>
-                            <li><a href="#" class="text-white">Data Sheet Legend</a></li>
-                            <li><a href="#" class="text-white">MOV, Pricing Quotes</a></li>
-                        </ul>
-                    </div>
-                </div>
+  <!--=========================  START FOOTER PART 1 ========================= -->
 
-                <!-- Column 3 (Services) -->
-                <div
-                    class="col-lg-3 col-md-4 col-12 mb-4 mb-lg-0 d-lg-flex d-xl-flex justify-content-center justify-content-sm-start">
-                    <div class="text-start">
-                        <h3 class="mb-3">Services</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-white">Custom Manufacturing</a></li>
-                            <li><a href="#" class="text-white">Pros & Cons</a></li>
-                            <li><a href="#" class="text-white">Product Sourcing</a></li>
-                            <li><a href="#" class="text-white">Quality Assurance</a></li>
-                        </ul>
-                    </div>
-                </div>
 
-                <!-- Column 4 (Resources) -->
-                <div
-                    class="col-lg-2 col-md-4 col-12 mb-4 mb-lg-0 d-lg-flex d-xl-flex justify-content-center justify-content-sm-start">
-                    <div class="text-start">
-                        <h3 class="mb-3">Resources</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-white">Custom Manufacturing</a></li>
-                            <li><a href="#" class="text-white">Pros & Cons</a></li>
-                            <li><a href="#" class="text-white">Product Sourcing</a></li>
-                            <li><a href="#" class="text-white">Quality Assurance</a></li>
-                        </ul>
-                    </div>
-                </div>
+  <section class="mt-5" style="background-color: rgb(49, 49, 49);">
+    <div class="container text-white">
+      <div class="row vh-50 d-flex align-items-center">
+        <!-- Column 1 (Logo and Description) -->
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <div>
+            <div class="text-start mb-3 mt-3">
+              <!-- Logo -->
+              <img src="../assets/image/logofooter.png" alt="LOGO" width="100px">
             </div>
+            <p style="text-align: justify;">
+              At Mill Direct Blanks, we draw on 40 years of experience in factories and supply chains to provide
+              high-quality products at low prices. By shipping directly to the nearest port and producing in low-wage
+              countries like Pakistan, we cut costs and pass the savings on to you. Our blank apparel is customizable,
+              offering flexibility in styles, colors, and fabrics to help you stand out. Committed to eco-friendly and
+              ethical sourcing, we ensure our products meet your standards while supporting sustainable practices. Mill
+              Direct Blanks: Quality, affordability, and customization you can trust.
+            </p>
+          </div>
         </div>
-    </section>
 
-    <section style="background-color: #000;">
-        <div class="container">
-            <div class="row" style="font-size: 14px;">
-
-                <div class="col-lg-12 d-flex justify-content-center align-items-center" style="margin-top: 6px;">
-                    <strong>
-                        <p style="color: antiquewhite; display: inline-flex; align-items: center;">
-                            <i class="fas fa-copyright" style="color: antiquewhite; margin-right: 5px;"></i>
-                            2025 HORIZON IMPEX, INC . ATLANTA, GEORGIA, U.S.A ALL RIGHTS RESERVED
-                        </p>
-                    </strong>
-                </div>
-
-            </div>
+        <!-- Column 2 (Information) -->
+        <div
+          class="col-lg-3 col-md-4 col-12 mb-4 mb-lg-0 d-lg-flex d-xl-flex justify-content-center justify-content-sm-start pl-xl-5">
+          <div class="text-start">
+            <h3 class="mb-3">Information</h3>
+            <ul class="list-unstyled underline-none">
+              <li><a href="#" class="text-white">About Us</a></li>
+              <li><a href="#" class="text-white">Shipping and Delivery</a></li>
+              <li><a href="#" class="text-white">Data Sheet Legend</a></li>
+              <li><a href="#" class="text-white">MOV, Pricing Quotes</a></li>
+            </ul>
+          </div>
         </div>
-    </section>
+
+        <!-- Column 3 (Services) -->
+        <div
+          class="col-lg-3 col-md-4 col-12 mb-4 mb-lg-0 d-lg-flex d-xl-flex justify-content-center justify-content-sm-start">
+          <div class="text-start">
+            <h3 class="mb-3">Services</h3>
+            <ul class="list-unstyled underline-none">
+              <li><a href="#" class="text-white">Custom Manufacturing</a></li>
+              <li><a href="#" class="text-white">Pros & Cons</a></li>
+              <li><a href="#" class="text-white">Product Sourcing</a></li>
+              <li><a href="#" class="text-white">Quality Assurance</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 4 (Resources) -->
+        <div
+          class="col-lg-2 col-md-4 col-12 mb-4 mb-lg-0 d-lg-flex d-xl-flex justify-content-center justify-content-sm-start">
+          <div class="text-start">
+            <h3 class="mb-3">Resources</h3>
+            <ul class="list-unstyled underline-none">
+              <li><a href="#" class="text-white">Custom Manufacturing</a></li>
+              <li><a href="#" class="text-white">Pros & Cons</a></li>
+              <li><a href="#" class="text-white">Product Sourcing</a></li>
+              <li><a href="#" class="text-white">Quality Assurance</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=========================  END FOOTER PART 1 ========================= -->
+
+  <!--=========================  START FOOTER PART 2 ========================= -->
+
+  <section style="background-color: #000;">
+    <div class="container">
+      <div class="row" style="font-size: 14px;">
+        <div class="col-lg-12 d-flex justify-content-center align-items-center" style="margin-top: 6px;">
+          <strong>
+            <p style="color: antiquewhite; display: inline-flex; align-items: center;">
+              <i class="fas fa-copyright" style="color: antiquewhite; margin-right: 5px;"></i>
+              2025 HORIZON IMPEX, INC . ATLANTA, GEORGIA, U.S.A ALL RIGHTS RESERVED
+            </p>
+          </strong>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--=========================  END FOOTER PART 2 ========================= -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
 
 
 
@@ -941,60 +769,25 @@ width: 170px;
     </script>
 
 
-    <!-- <script>
+
+
+    <script>
         // Function to toggle the categories visibility
-function toggleCategories() {
-    const categoryList = document.querySelector('.categories-list');
-    
-    // Check if the list is hidden
-    if (categoryList.style.display === "none" || categoryList.style.display === "") {
-        categoryList.style.display = "block"; // Show categories
+    function toggleCategories() {
+        const categoryList = document.querySelector('.categories-list');
         
-        // Center categories when they are shown
-        categoryList.style.position = "absolute";
-        categoryList.style.top = "50%";
-        categoryList.style.left = "50%";
-        categoryList.style.transform = "translate(-50%, -50%)"; // Center it horizontally and vertically
-        
-    } else {
-        categoryList.style.display = "none"; // Hide categories
-    }
-}
-
-    </script> -->
-
-<script>
-    // Function to toggle the categories visibility
-function toggleCategories() {
-    const categoryList = document.querySelector('.categories-list');
-    
-    // If on mobile and categoryList is hidden, show it; else hide it
-    if (window.innerWidth <= 576) {
-        if (categoryList.style.display === "none" || categoryList.style.display === "") {
-            categoryList.style.display = "block"; // Show categories
-        } else {
-            categoryList.style.display = "none"; // Hide categories
+        // If on mobile and categoryList is hidden, show it; else hide it
+        if (window.innerWidth <= 576) {
+            if (categoryList.style.display === "none" || categoryList.style.display === "") {
+                categoryList.style.display = "block"; // Show categories
+            } else {
+                categoryList.style.display = "none"; // Hide categories
+            }
         }
     }
-}
+    
+    </script>
 
-</script>
-
-
-
-
-
-    <!--=========================  END HEADER PART 2 ========================= -->
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
