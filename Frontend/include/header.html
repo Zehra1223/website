@@ -20,10 +20,16 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
   
+ 
+
 
 
 </head>
@@ -108,7 +114,7 @@
     }
 
 
-   
+
     /* .search-container {
       display: none !important;
     } */
@@ -148,7 +154,48 @@
   .underline-none a {
     text-decoration: none;
   }
+
+  .swiper-button-prev, .swiper-button-next {
+      color: aliceblue;
+    }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+
+
+
+    .swiper-button-prev1, .swiper-button-next1 {
+      color: aliceblue;
+    }
+    .swiper-slide1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+
+<style>
+  .swiper-button-prev,
+  .swiper-button-next,
+  .swiper-button-prev1,
+  .swiper-button-next1 {
+    padding: 10px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    z-index: 10; /* Ensure buttons are visible above the slider */
+  }
+
+  .swiper-button-prev1,
+  .swiper-button-next1 {
+    z-index: 10; /* Ensure buttons are visible above the second slider */
+  }
 </style>
+
 
 <body>
   <!--========================= START HEADER PART 1========================-->
@@ -265,7 +312,8 @@
             </div>
           </li>
           <li class="nav-item ml-2">
-            <a class="nav-link" href="youth.html" style="color: whitesmoke; font-size: 15px;"><strong>ADULTS</strong></a>
+            <a class="nav-link" href="youth.html"
+              style="color: whitesmoke; font-size: 15px;"><strong>ADULTS</strong></a>
           </li>
           <li class="nav-item ml-2">
             <a class="nav-link" href="youth.html" style="color: whitesmoke; font-size: 15px;"><strong>WOMEN</strong></a>
@@ -387,6 +435,686 @@
 
   <!--=========================  END SLIDER ========================= -->
 
+
+
+
+  <!--=========================  START FLEECE SYTLE SECTION ========================= -->
+
+  <!-- <div class="container mt-4">
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+      
+        <div class="row">
+          <div class="col-md-3">
+            <div class="carousel-item active">
+              <img src="../assets/image/banner/3.PNG" class="card-img-top" alt="Image">
+              
+            </div>
+          </div>
+        
+          <div class="col-md-3">
+            <div class="">
+              <img src="../assets/image/banner/1 copy.png" class="card-img-top" alt="Image">
+            
+            </div>
+          </div>
+        
+          <div class="col-md-3">
+            <div class="">
+              <img src="../assets/image/banner/1.PNG" class="card-img-top" alt="Image">
+             
+            </div>
+          </div>
+        
+          <div class="col-md-3">
+            <div class="">
+              <img src="../assets/image/banner/11.PNG" class="card-img-top" alt="Image">
+           
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="">
+              <img src="../assets/image/banner/6.PNG" class="card-img-top" alt="Image">
+           
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="">
+              <img src="../assets/image/banner/7.PNG" class="card-img-top" alt="Image">
+           
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="">
+              <img src="../assets/image/banner/2.PNG" class="card-img-top" alt="Image">
+           
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="">
+              <img src="../assets/image/banner/4.PNG" class="card-img-top" alt="Image">
+           
+            </div>
+          </div>
+
+        </div>
+        
+      
+      </div>
+  
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div> -->
+<!-- <section>
+<div class="container mt-4">
+  <div class="row">
+    <div>
+      <img src="../assets/image/BANNERS/banner-copy.png" alt="Image" width="100%">
+    </div>
+  </div>
+</div>
+
+  <div class="container mt-4">
+ 
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+       
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="../assets/image/banner/3.PNG" class="card-img-top" alt="Image">
+            </div>
+            <div class="col-md-3">
+              <img src="../assets/image/banner/1 copy.png" class="card-img-top" alt="Image">
+            </div>
+            <div class="col-md-3">
+              <img src="../assets/image/banner/1.PNG" class="card-img-top" alt="Image">
+            </div>
+            <div class="col-md-3">
+              <img src="../assets/image/banner/11.PNG" class="card-img-top" alt="Image">
+            </div>
+          </div>
+        </div>
+  
+      
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="../assets/image/banner/6.PNG" class="card-img-top" alt="Image">
+            </div>
+            <div class="col-md-3">
+              <img src="../assets/image/banner/7.PNG" class="card-img-top" alt="Image">
+            </div>
+            <div class="col-md-3">
+              <img src="../assets/image/banner/2.PNG" class="card-img-top" alt="Image">
+            </div>
+            <div class="col-md-3">
+              <img src="../assets/image/banner/4.PNG" class="card-img-top" alt="Image">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+     
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section> -->
+
+
+
+<section>
+  <div class="container mt-4">
+    <div class="row">
+      <div>
+        <img src="../assets/image/BANNERS/banner-copy.png" alt="Image" width="100%" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper container for the first slider -->
+  <div class="container mt-4 swiper-container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- First carousel item containing 4 images -->
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="card col-md-3" id="Controls1" style="border: none;">
+              <img src="../assets/image/banner/3.PNG" class="card-img-top" alt="Image" />
+            </div>
+            <div class="card col-md-3" id="Controls2" style="border: none;">
+              <img src="../assets/image/banner/1 copy.png" class="card-img-top" alt="Image" />
+            </div>
+            <div class="card col-md-3" id="Controls3" style="border: none;">
+              <img src="../assets/image/banner/1.PNG" class="card-img-top" alt="Image" />
+            </div>
+            <div class="card col-md-3" id="Controls4" style="border: none;">
+              <img src="../assets/image/banner/11.PNG" class="card-img-top" alt="Image" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Second carousel item containing 4 images -->
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="card col-md-3" id="Controls5" style="border: none;">
+              <img src="../assets/image/banner/6.PNG" class="card-img-top" alt="Image" />
+            </div>
+            <div class="card col-md-3" id="Controls6" style="border: none;">
+              <img src="../assets/image/banner/7.PNG" class="card-img-top" alt="Image" />
+            </div>
+            <div class="card col-md-3" id="Controls7" style="border: none;">
+              <img src="../assets/image/banner/2.PNG" class="card-img-top" alt="Image" />
+            </div>
+            <div class="card col-md-3" id="Controls8" style="border: none;">
+              <img src="../assets/image/banner/4.PNG" class="card-img-top" alt="Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swiper controls for the first slider -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+  <!--=========================  END FLEECE SYTLE SECTION ========================= -->
+
+
+  <!--=========================  START TEES & LT. WEIGHT TOPS STYLES SECTION ========================= -->
+<!-- 
+  <section>
+    <div class="container mt-4">
+      <div class="row">
+        <div>
+          <img src="../assets/image/BANNERS/tees & LT Weight.png" alt="Image" width="100%">
+        </div>
+      </div>
+    </div>
+  
+      <div class="container mt-4">
+     
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner">
+        
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/10-1.jpg" class="card-img-top" alt="Image">
+                </div>
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/Cropp-ahmed-bhai-1.png" class="card-img-top" alt="Image">
+                </div>
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/d-copy.jpg" class="card-img-top" alt="Image">
+                </div>
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/3-1.jpg" class="card-img-top" alt="Image">
+                </div>
+              </div>
+            </div>
+      
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/7-1.jpg" class="card-img-top" alt="Image">
+                </div>
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/full-zip-hoodie.jpg" class="card-img-top" alt="Image">
+                </div>
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/t-shirt-hoodie-1-1.jpg" class="card-img-top" alt="Image">
+                </div>
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/10-1.jpg" class="card-img-top" alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section> -->
+
+<!-- 
+    <section>
+      <div class="container mt-4">
+        <div class="row">
+          <div>
+            <img src="../assets/image/BANNERS/tees & LT Weight.png" alt="Image" width="100%" />
+          </div>
+        </div>
+      </div>
+    
+      <div class="container mt-4">
+        <div id="carouselExampleControls2" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner">
+          
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/10-1.jpg" class="card-img-top" alt="Image">
+                </div>
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/Cropp-ahmed-bhai-1.png" class="card-img-top" alt="Image">
+                </div>
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/d-copy.jpg" class="card-img-top" alt="Image">
+                </div>
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/3-1.jpg" class="card-img-top" alt="Image">
+                </div>
+              </div>
+            </div>
+    
+            
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/7-1.jpg" class="card-img-top" alt="Image">
+                </div>
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/full-zip-hoodie.jpg" class="card-img-top" alt="Image">
+                </div>
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/t-shirt-hoodie-1-1.jpg" class="card-img-top" alt="Image">
+                </div>
+                <div class="col-md-3">
+                  <img src="../assets/image/banner/sllide banner image/10-1.jpg" class="card-img-top" alt="Image">
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        
+          <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section> -->
+    
+
+
+    <section>
+      <div class="container mt-4">
+        <div class="row">
+          <div>
+            <img src="../assets/image/BANNERS/banner-copy.png" alt="Image" width="100%" />
+          </div>
+        </div>
+      </div>
+    
+      <!-- Swiper container for the second slider -->
+      <div class="container mt-4 swiper-container">
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <!-- First carousel item containing 4 images -->
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="card col-md-3" id="Controls1" style="border: none;">
+                  <img src="../assets/image/banner/3.PNG" class="card-img-top" alt="Image" />
+                </div>
+                <div class="card col-md-3" id="Controls2" style="border: none;">
+                  <img src="../assets/image/banner/1 copy.png" class="card-img-top" alt="Image" />
+                </div>
+                <div class="card col-md-3" id="Controls3" style="border: none;">
+                  <img src="../assets/image/banner/1.PNG" class="card-img-top" alt="Image" />
+                </div>
+                <div class="card col-md-3" id="Controls4" style="border: none;">
+                  <img src="../assets/image/banner/11.PNG" class="card-img-top" alt="Image" />
+                </div>
+              </div>
+            </div>
+    
+            <!-- Second carousel item containing 4 images -->
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="card col-md-3" id="Controls5" style="border: none;">
+                  <img src="../assets/image/banner/6.PNG" class="card-img-top" alt="Image" />
+                </div>
+                <div class="card col-md-3" id="Controls6" style="border: none;">
+                  <img src="../assets/image/banner/7.PNG" class="card-img-top" alt="Image" />
+                </div>
+                <div class="card col-md-3" id="Controls7" style="border: none;">
+                  <img src="../assets/image/banner/2.PNG" class="card-img-top" alt="Image" />
+                </div>
+                <div class="card col-md-3" id="Controls8" style="border: none;">
+                  <img src="../assets/image/banner/4.PNG" class="card-img-top" alt="Image" />
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Swiper controls for the second slider -->
+          <div class="swiper-button-prev1"></div>
+          <div class="swiper-button-next1"></div>
+        </div>
+      </div>
+    </section>
+    
+  <!--=========================  END TEES & LT. WEIGHT TOPS SYTLE SECTION ========================= -->
+
+
+
+
+
+    <!--=========================  START ECO SUSTAINABLE STYLES SECTION ========================= -->
+
+    <section>
+      <div class="container mt-4">
+        <div class="row">
+          <div>
+            <img src="../assets/image/BANNERS/eco Sustainable.png" alt="Image" width="100%">
+          </div>
+        </div>
+      </div>
+      <!-- 
+      <img src="../assets/image/BANNERS/FLEECE STYLES.JPG" alt="Image"> -->
+        <div class="container mt-4">
+       
+          <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <!-- First carousel item containing 4 images -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img src="../assets/image/banner/sllide banner image/full-zip-hoodie.jpg" class="card-img-top" alt="Image">
+                  </div>
+                  <div class="col-md-3">
+                    <img src="../assets/image/banner/sllide banner image/pullover-hoodie.jpg" class="card-img-top" alt="Image">
+                  </div>
+                  <div class="col-md-3">
+                    <img src="../assets/image/banner/sllide banner image/sweat-pant.jpg" class="card-img-top" alt="Image">
+                  </div>
+                  <div class="col-md-3">
+                    <img src="../assets/image/banner/sllide banner image/jogger-2.jpg" class="card-img-top" alt="Image">
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Second carousel item containing 4 images -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img src="../assets/image/banner/sllide banner image/full-zip-hoodie.jpg" class="card-img-top" alt="Image">
+                  </div>
+                  <div class="col-md-3">
+                    <img src="../assets/image/banner/sllide banner image/pullover-hoodie.jpg" class="card-img-top" alt="Image">
+                  </div>
+                  <div class="col-md-3">
+                    <img src="../assets/image/banner/sllide banner image/sweat-pant.jpg" class="card-img-top" alt="Image">
+                  </div>
+                  <div class="col-md-3">
+                    <img src="../assets/image/banner/sllide banner image/jogger-2.jpg" class="card-img-top" alt="Image">
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    <!--=========================  END ECO SUSTAINABLE SYTLE SECTION ========================= -->
+
+
+
+
+
+
+       <!--=========================  START RESORT STYLES SECTION ========================= -->
+
+       <section>
+        <div class="container mt-4">
+          <div class="row">
+            <div>
+              <img src="../assets/image/BANNERS/resort.png" alt="Image" width="100%">
+            </div>
+          </div>
+        </div>
+        <!-- 
+        <img src="../assets/image/BANNERS/FLEECE STYLES.JPG" alt="Image"> -->
+          <div class="container mt-4">
+         
+            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+              <div class="carousel-inner">
+                <!-- First carousel item containing 4 images -->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img src="../assets/image/banner/sllide banner image/9.png" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../assets/image/banner/sllide banner image/cool-pigment-oil-wash.jpg" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../assets/image/banner/sllide banner image/garment-dye.jpg" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../assets/image/banner/sllide banner image/gradient-dip-dye.jpg" class="card-img-top" alt="Image">
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Second carousel item containing 4 images -->
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img src="../assets/image/banner/sllide banner image/mineral-wash.jpg" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../assets/image/banner/sllide banner image/gradient-dip-dye.jpg" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../assets/image/banner/sllide banner image/vintage-wash.jpg" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../assets/image/banner/sllide banner image/pigment-dye.jpg" class="card-img-top" alt="Image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Carousel controls -->
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      <!--=========================  END RESORT SYTLE SECTION ========================= -->
+
+
+       <!--=========================  START NAN TUCKET SECTION ========================= -->
+
+       <section>
+        <div class="container mt-4">
+          <div class="row">
+            <div>
+              <img src="../assets/image/BANNERS/nantucket fleece.png" alt="Image" width="100%">
+            </div>
+          </div>
+        </div>
+        <!-- 
+        <img src="../assets/image/BANNERS/FLEECE STYLES.JPG" alt="Image"> -->
+          <div class="container mt-4">
+         
+            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+              <div class="carousel-inner">
+                <!-- First carousel item containing 4 images -->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img src="../assets/image/BANNER/9- BANNERS/a.PNG" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../assets/image/BANNER/9- BANNERS/b.PNG" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../assets/image/BANNER/9- BANNERS/c.PNG" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../assets/image/BANNER/9- BANNERS/d.PNG" class="card-img-top" alt="Image">
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Second carousel item containing 4 images -->
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img src="../assets/image/BANNER/9- BANNERS/a.PNG" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../assets/image/BANNER/9- BANNERS/b.PNG" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../assets/image/BANNER/9- BANNERS/c.PNG" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../assets/image/BANNER/9- BANNERS/d.PNG" class="card-img-top" alt="Image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Carousel controls -->
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      <!--=========================  END NAN TUCKET SYTLE SECTION ========================= -->
+
+
+
+
+
+
+             <!--=========================  START CORDED SECTION ========================= -->
+
+             <section>
+              <div class="container mt-4">
+                <div class="row">
+                  <div>
+                    <img src="../assets/image/BANNERS/corded.png" alt="Image" width="100%">
+                  </div>
+                </div>
+              </div>
+              <!-- 
+              <img src="../assets/image/BANNERS/FLEECE STYLES.JPG" alt="Image"> -->
+                <div class="container mt-4">
+               
+                  <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <!-- First carousel item containing 4 images -->
+                      <div class="carousel-item active">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <img src="../assets/image/Banner/9- BANNERS/1.PNG" class="card-img-top" alt="Image">
+                          </div>
+                          <div class="col-md-3">
+                            <img src="../assets/image/Banner/9- BANNERS/2.PNG" class="card-img-top" alt="Image">
+                          </div>
+                          <div class="col-md-3">
+                            <img src="../assets/image/Banner/9- BANNERS/3.PNG" class="card-img-top" alt="Image">
+                          </div>
+                          <div class="col-md-3">
+                            <img src="../assets/image/Banner/9- BANNERS/3.PNG" class="card-img-top" alt="Image">
+                          </div>
+                        </div>
+                      </div>
+                
+                      <!-- Second carousel item containing 4 images -->
+                      <div class="carousel-item">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <img src="../assets/image/banner/6.PNG" class="card-img-top" alt="Image">
+                          </div>
+                          <div class="col-md-3">
+                            <img src="../assets/image/banner/7.PNG" class="card-img-top" alt="Image">
+                          </div>
+                          <div class="col-md-3">
+                            <img src="../assets/image/banner/2.PNG" class="card-img-top" alt="Image">
+                          </div>
+                          <div class="col-md-3">
+                            <img src="../assets/image/banner/4.PNG" class="card-img-top" alt="Image">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            <!--=========================  END CORDED SYTLE SECTION ========================= -->
+      
+
+
   <!--=========================  START FOOTER PART 1 ========================= -->
 
 
@@ -431,10 +1159,10 @@
           <div class="text-start">
             <h3 class="mb-3">Services</h3>
             <ul class="list-unstyled underline-none">
-              <li><a href="#" class="text-white">Custom Manufacturing</a></li>
+              <li><a href="../include/custom-manufacturing.html" class="text-white">Custom Manufacturing</a></li>
               <li><a href="#" class="text-white">Pros & Cons</a></li>
-              <li><a href="#" class="text-white">Product Sourcing</a></li>
-              <li><a href="#" class="text-white">Quality Assurance</a></li>
+              <li><a href="../include/terms&condition.html" class="text-white">Terms & Conditions</a></li>
+              <li><a href="#" class="text-white">Contact US</a></li>
             </ul>
           </div>
         </div>
@@ -445,10 +1173,10 @@
           <div class="text-start">
             <h3 class="mb-3">Resources</h3>
             <ul class="list-unstyled underline-none">
-              <li><a href="#" class="text-white">Custom Manufacturing</a></li>
-              <li><a href="#" class="text-white">Pros & Cons</a></li>
-              <li><a href="#" class="text-white">Product Sourcing</a></li>
-              <li><a href="#" class="text-white">Quality Assurance</a></li>
+              <li><a href="#" class="text-white">Color Chart</a></li>
+              <li><a href="#" class="text-white">Fashion Color & Pattern</a></li>
+              <li><a href="#" class="text-white">Order Process</a></li>
+              <li><a href="#" class="text-white">HOW TO Measure</a></li>
             </ul>
           </div>
         </div>
@@ -476,6 +1204,11 @@
     </div>
   </section>
 
+
+
+
+
+  
   <!--=========================  END FOOTER PART 2 ========================= -->
 
   <!-- Optional JavaScript -->
@@ -491,8 +1224,55 @@
     crossorigin="anonymous"></script>
 
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- If using Bootstrap 4 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script> <!-- For Bootstrap 4 -->
+<!-- OR -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> <!-- For Bootstrap 5 -->
+<!-- Include Swiper library -->
 
-  <script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper1 = new Swiper('.mySwiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+    },
+  });
+
+  const swiper2 = new Swiper('.mySwiper1', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next1',
+      prevEl: '.swiper-button-prev1',
+    },
+    pagination: {
+      el: '.swiper-pagination1',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+    },
+  });
+</script>
+  <!-- <script>
     $(document).ready(function () {
       $('#carouselExampleControls').carousel({
         interval: 3000, // Set the interval for the carousel (in milliseconds)
@@ -518,8 +1298,20 @@
     }
 
 
-  </script>
-
+  </script> -->
+<!-- <script>
+  $(document).ready(function() {
+    $('#carouselExampleControls2').carousel();
+  });
+</script> -->
 </body>
 
 </html>
+
+
+
+
+
+
+
+

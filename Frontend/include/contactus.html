@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/linearicons/1.0.0/font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Almeera Ecommerce Website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<style>
+    .d-flex {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .dropdown {
+        margin-right: 0;
+
+    }
+
+    .search-container {
+        position: relative;
+        width: 500px;
+        margin-left: 0;
+
+    }
+
+    .search-container input {
+        padding: 8px 30px 8px 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+
+    .search-container i {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        color: #aaa;
+        font-size: 18px;
+
+    }
+
+    .no-space {
+        margin-bottom: 0;
+    }
+
+    .col-md-3 {
+        padding-bottom: 10px;
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+
+    .list-unstyled li {
+        margin-bottom: 5px;
+    }
+
+
+    .navbar-toggler {
+        margin-right: 0 !important;
+    }
+
+    i.fa-regular,
+    i.fa-solid {
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+    }
+
+
+    @media (max-width: 1200px) {
+
+        .dropdown1,
+        .search-container {
+            display: none !important;
+        }
+
+
+
+
+    }
+
+    @media (max-width: 991px) {
+        .col-lg-2 .logo_pic {
+            max-width: 120px;
+        }
+    }
+
+    .col-lg-2 .logo_pic {
+        max-width: 120px;
+    }
+
+    .search-container1 {
+        position: absolute;
+        top: 50%;
+        right: 150px;
+        transform: translateY(-50%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .search-input {
+        width: 0;
+        padding: 5px;
+        font-size: 16px;
+        opacity: 0;
+        transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    .search-input.show {
+        width: 150px;
+        opacity: 1;
+    }
+
+    .underline-none a {
+        text-decoration: none;
+    }
+
+    .main-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .left-div,
+    .right-div {
+        width: 48%;
+    }
+
+    .full-width-line {
+        width: 100%;
+        border: 1px solid #333333;
+        margin: 10px 0;
+    }
+
+    .square-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+</style>
+
+<style>
+    /* Ensure the form is centered and has a controlled width */
+    form {
+        max-width: 600px;
+        /* Control the width of the form */
+        margin: 0 auto;
+        /* Center the form horizontally */
+    }
+
+    /* Optional: Style the form elements like textarea and button */
+    .form-control {
+        width: 100%;
+        /* Ensure form controls take full width of the form */
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 20%;
+        /* Ensure button takes full width of the form */
+        padding: 50px;
+        /* Ensure button takes full width of the form */
+    }
+</style>
+
+
+
+<body>
+    <!--========================= START HEADER PART 1========================-->
+
+    <section>
+        <div class="container">
+            <div class="row header">
+
+                <div class="col-lg-12 d-flex justify-content-end text-left">
+                    <p class="d-none d-md-block" style="color: black;">Why Mill Direct Blanks?</p>
+                    <p class="ml-3 d-none d-md-block" style="color: black;">About Us</p>
+                    <p class="ml-3 d-none d-md-block" style="color: black;">Contact Us</p>
+                    <p class="ml-3 d-none d-md-block" style="color: black;">
+                        <i class="fas fa-envelope"></i>
+                        Inquiries: info@milldirectblanks.com
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--=========================  END HEADER PART 1 ========================= -->
+
+    <!--=========================  START HEADER PART 2 ========================= -->
+
+    <section>
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-between flex-wrap flex-md-nowrap">
+
+                <div class="col-lg-2 col-md-4 col-sm-4 col-4 mb-3 mb-md-0 text-center">
+                    <img src="../assets/image/logo.png" alt="LOGO" class="img-fluid logo_pic">
+                </div>
+
+                <div class="col-lg-2 col-md-1 col-sm-1 col-1 mb-3 mb-md-0 text-center">
+
+                </div>
+
+
+                <div class="col-lg-6 col-md-2 col-sm-3 col-1 mb-3 mb-md-0">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-5 col-6 p-0">
+                            <div class="dropdown1">
+                                <a class="btn btn-outline-dark form-control d-flex align-items-center" href="#"
+                                    role="button" data-toggle="dropdown" aria-expanded="false">
+                                    Category
+                                    <i class="fa-solid fa-caret-down d-flex justify-content-end ml-lg-1 ml-xl-5"
+                                        style="font-size: 15px;"></i>
+                                </a>
+                                <div class="dropdown-menu" style="overflow-y: auto;">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 col-md-7 col-6 p-0">
+                            <div class="search-container d-flex">
+                                <input type="search" id="gsearch" name="gsearch" placeholder="Search..."
+                                    class="form-control">
+                                <i class="fas fa-search mr-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div
+                    class="col-lg-2 col-md-5 col-sm-4 col-6 d-flex justify-content-end align-items-center mt-4 mt-md-0">
+                    <div>
+                        <i id="searchIcon"
+                            class="fas fa-search mr-2 d-xl-none d-inline-block d-md-inline-block d-lg-inline-block"
+                            style="font-size: 30px;" onclick="toggleSearch()"></i>
+
+                        <i class="fa-regular fa-user"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+
+                    <div class="search-container1">
+                        <input type="text" id="searchInput" class="search-input d-none" placeholder="Search...">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--=========================  END HEADER PART 2 ========================= -->
+
+
+    <!--=========================  START HEADER PART 3 ========================= -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black; ">
+        <div class="container">
+            <button class="navbar-toggler ml-auto navbarrr" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-center nav-resp" id="navbarNav">
+                <ul class="navbar-nav home-link ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="header.html"
+                            style="color: whitesmoke; font-size: 15px;"><strong>HOME</strong></a>
+                    </li>
+
+                    <li class="nav-item dropdown ml-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+                            <strong>CATEGORIES</strong>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">All</a>
+                            <a class="dropdown-item" href="#">Fleece</a>
+                            <a class="dropdown-item" href="#">Tees</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="youth.html"
+                            style="color: whitesmoke; font-size: 15px;"><strong>ADULTS</strong></a>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="youth.html"
+                            style="color: whitesmoke; font-size: 15px;"><strong>WOMEN</strong></a>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="youth.html"
+                            style="color: whitesmoke; font-size: 15px;"><strong>YOUTH</strong></a>
+                    </li>
+
+                    <li class="nav-item dropdown ml-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+                            <strong>COLLECTIONS</strong>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">All</a>
+                            <a class="dropdown-item" href="#">Fleece</a>
+                            <a class="dropdown-item" href="#">Tees</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item dropdown ml-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+                            <strong>FLEECE STYLES</strong>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">All</a>
+                            <a class="dropdown-item" href="#">Fleece</a>
+                            <a class="dropdown-item" href="#">Tees</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item dropdown ml-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+                            <strong>T & T Styles</strong>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">All</a>
+                            <a class="dropdown-item" href="#">Fleece</a>
+                            <a class="dropdown-item" href="#">Tees</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item dropdown ml-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" style="color: whitesmoke; font-size: 15px;">
+                            <strong>FINISHES</strong>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">All</a>
+                            <a class="dropdown-item" href="#">Fleece</a>
+                            <a class="dropdown-item" href="#">Tees</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!--=========================  END HEADER PART 3 ========================= -->
+
+
+    <!--=========================  START SLIDER ========================= -->
+
+
+
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-7">
+
+                <!-- contact us -->
+                <div>
+                    <p class="" style="font-weight: bold; font-size: 40px;">Contact Us:</p>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11554.798273631607!2d74.3587!3d31.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904d149da9b95%3A0x2f6d56f57d8e4f72!2sLahore%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1673407037986!5m2!1sen!2sus"
+                        width="95%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+
+                    <p class="" style="font-weight: bold; font-size: 22px; margin-top: 40px;"><img
+                            src="../assets/image/location.png" alt="LocationImage" width="30px"
+                            height="30px">&nbsp;&nbsp; HORIZON IMPEX, INC . ATLANTA, GEORGIA, U.S.A
+                    </p>
+                    <p class="" style="font-weight: bold; font-size: 22px; margin-top: 20px;"><img
+                            src="../assets/image/mail.png" alt="LocationImage" width="30px"
+                            height="30px">&nbsp;&nbsp;info@milldirectblanks.com</p>
+                </div>
+            </div>
+
+
+            <!-- get in touch -->
+
+
+
+
+            <div class="col-lg-5">
+                <form action="" style="max-width: 600px; margin: 0 auto;">
+                    <p class="" style="font-weight: bold; font-size: 40px;">Get in Touch</p>
+                    <div class="form-group">
+                        <label for=""><strong>Your name</strong></label>
+                        <!-- <input type="text" class="form-control" style="width: 400px; height: 50px;"> -->
+                        <input type="text" class="form-control"
+                            style="width: 100%; height: 50px; border: 2px solid #D3D3D3; color: grey; padding: 10px; border-radius: 10px;">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for=""><strong>Your email</strong></label>
+                        <input type="text" class="form-control"
+                            style="width: 100%; height: 50px; border: 2px solid #D3D3D3; color: grey; padding: 10px; border-radius: 10px;">
+                    </div>
+
+                    <div class="form-group">
+                        <label for=""><strong>Phone</strong></label>
+                        <input type="text" class="form-control"
+                            style="width: 100%; height: 50px; border: 2px solid #D3D3D3; color: grey; padding: 10px; border-radius: 10px;">
+                    </div>
+
+                    <div class="form-group">
+                        <label for=""><strong>Your message (optional)</strong></label>
+                        <textarea name="" class="form-control" id=""
+                            style="width: 100%; height: 200px; border: 2px solid #D3D3D3; color: grey; padding: 10px; border-radius: 10px;"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline-dark"
+                            style="background-color: #000; color:aliceblue; padding: 10px">
+                            <strong>SUBMIT</strong>
+                        </button>
+                    </div>
+
+                </form>
+
+
+
+                <div style="display: flex; justify-content: center; gap: 15px;">
+                    <i class="fa-brands fa-facebook" style="font-size: 24px; cursor: pointer;"></i>
+
+                    <i class="fa-brands fa-square-instagram" style="font-size: 24px; cursor: pointer;"></i>
+
+                    <i class="fa-brands fa-square-twitter" style="font-size: 24px; cursor: pointer;"></i>
+
+                    <i class="fa-brands fa-tiktok" style="font-size: 24px; cursor: pointer;"></i>
+  <!-- Extra -->
+
+   <!-- <i class="fa-brands fa-facebook-f"></i>
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                    <i class="fa-brands fa-twitter"></i>
+ <i class="fa-brands fa-tiktok"></i> -->
+                </div>
+<!-- <br>
+<br>
+<br>
+
+
+                <div style="display: flex; justify-content: center; gap: 15px;">
+                    <i class="fa-brands fa-facebook-f" style="font-size: 24px; cursor: pointer;"></i>
+                    <i class="fa-brands fa-instagram" style="font-size: 24px; cursor: pointer;"></i>
+                    <i class="fa-brands fa-twitter" style="font-size: 24px; cursor: pointer;"></i>
+                    <i class="fa-brands fa-tiktok" style="font-size: 24px; cursor: pointer;"></i>
+                </div> -->
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!--=========================  END SLIDER ========================= -->
+
+    <!--=========================  START FOOTER PART 1 ========================= -->
+
+
+    <section class="mt-5" style="background-color: rgb(49, 49, 49);">
+        <div class="container text-white">
+            <div class="row vh-50 d-flex align-items-center">
+
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <div>
+                        <div class="text-start mb-3 mt-3">
+                            <!-- Logo -->
+                            <img src="../assets/image/logofooter.png" alt="LOGO" width="100px">
+                        </div>
+                        <p style="text-align: justify;">
+                            At Mill Direct Blanks, we draw on 40 years of experience in factories and supply chains to
+                            provide
+                            high-quality products at low prices. By shipping directly to the nearest port and producing
+                            in low-wage
+                            countries like Pakistan, we cut costs and pass the savings on to you. Our blank apparel is
+                            customizable,
+                            offering flexibility in styles, colors, and fabrics to help you stand out. Committed to
+                            eco-friendly and
+                            ethical sourcing, we ensure our products meet your standards while supporting sustainable
+                            practices. Mill
+                            Direct Blanks: Quality, affordability, and customization you can trust.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Column 2 (Information) -->
+                <div
+                    class="col-lg-3 col-md-4 col-12 mb-4 mb-lg-0 d-lg-flex d-xl-flex justify-content-center justify-content-sm-start pl-xl-5">
+                    <div class="text-start">
+                        <h3 class="mb-3">Information</h3>
+                        <ul class="list-unstyled underline-none">
+                            <li><a href="#" class="text-white">About Us</a></li>
+                            <li><a href="#" class="text-white">Shipping and Delivery</a></li>
+                            <li><a href="#" class="text-white">Data Sheet Legend</a></li>
+                            <li><a href="#" class="text-white">MOV, Pricing Quotes</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 3 (Services) -->
+                <div
+                    class="col-lg-3 col-md-4 col-12 mb-4 mb-lg-0 d-lg-flex d-xl-flex justify-content-center justify-content-sm-start">
+                    <div class="text-start">
+                        <h3 class="mb-3">Services</h3>
+                        <ul class="list-unstyled underline-none">
+                            <li><a href="../include/custom-manufacturing.html" class="text-white">Custom
+                                    Manufacturing</a></li>
+                            <li><a href="#" class="text-white">Pros & Cons</a></li>
+                            <li><a href="../include/terms&condition.html" class="text-white">Terms & Conditions</a></li>
+                            <li><a href="#" class="text-white">Contact US</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- Column 4 (Resources) -->
+                <div
+                    class="col-lg-2 col-md-4 col-12 mb-4 mb-lg-0 d-lg-flex d-xl-flex justify-content-center justify-content-sm-start">
+                    <div class="text-start">
+                        <h3 class="mb-3">Resources</h3>
+                        <ul class="list-unstyled underline-none">
+                            <li><a href="#" class="text-white">Color Chart</a></li>
+                            <li><a href="#" class="text-white">Fashion Color & Pattern</a></li>
+                            <li><a href="#" class="text-white">Order Process</a></li>
+                            <li><a href="#" class="text-white">HOW TO Measure</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=========================  END FOOTER PART 1 ========================= -->
+
+    <!--=========================  START FOOTER PART 2 ========================= -->
+
+    <section style="background-color: #000;">
+        <div class="container">
+            <div class="row" style="font-size: 14px;">
+                <div class="col-lg-12 d-flex justify-content-center align-items-center" style="margin-top: 6px;">
+                    <strong>
+                        <p style="color: antiquewhite; display: inline-flex; align-items: center;">
+                            <i class="fas fa-copyright" style="color: antiquewhite; margin-right: 5px;"></i>
+                            2025 HORIZON IMPEX, INC . ATLANTA, GEORGIA, U.S.A ALL RIGHTS RESERVED
+                        </p>
+                    </strong>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--=========================  END FOOTER PART 2 ========================= -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#carouselExampleControls').carousel({
+                interval: 3000,
+                pause: 'hover'
+            });
+        });
+
+        function toggleSearch() {
+            var input = document.getElementById('searchInput');
+            var icon = document.getElementById('searchIcon');
+
+            input.classList.toggle('d-none');
+            input.classList.toggle('show');
+
+
+            if (input.classList.contains('show')) {
+                icon.classList.remove('fa-search');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-search');
+            }
+        }
+
+
+    </script>
+    <script>
+        function changeShirtColor(color) {
+            let shirtImage = '';
+
+            switch (color) {
+                case '#333333':
+                    shirtImage = '../assets/image/Shirt1/BLACK.png';
+                    break;
+                case '#36454F':
+                    shirtImage = '../assets/image/Shirt1/CHARCOAL.png';
+                    break;
+                case '#954535':
+                    shirtImage = '../assets/image/Shirt1/CHESTNUT.png';
+                    break;
+                case '#2F353B':
+                    shirtImage = '../assets/image/Shirt1/GRAPHITE HEATER.png';
+                    break;
+                case '#8EE53F':
+                    shirtImage = '../assets/image/Shirt1/KIWI.png';
+                    break;
+                case '#800000':
+                    shirtImage = '../assets/image/Shirt1/MAROON.png';
+                    break;
+                case '#003366':
+                    shirtImage = '../assets/image/Shirt1/MIDNIGHT.png';
+                    break;
+                case '#D1C6B1':
+                    shirtImage = '../assets/image/Shirt1/NATURAL.png';
+                    break;
+                case '#000080':
+                    shirtImage = '../assets/image/Shirt1/NAVY.png';
+                    break;
+                case '#808000':
+                    shirtImage = '../assets/image/Shirt1/OLIVE.png';
+                    break;
+                case '#4169E1':
+                    shirtImage = '../assets/image/Shirt1/ROYAL.png';
+                    break;
+                case '#D2B48C':
+                    shirtImage = '../assets/image/Shirt1/TAN.png';
+                    break;
+                default:
+                    shirtImage = '../assets/image/Shirt1/BLACK.png';
+                    break;
+            }
+
+
+            document.getElementById('colorImage').src = shirtImage;
+        }
+
+    </script>
+</body>
+
+</html>
